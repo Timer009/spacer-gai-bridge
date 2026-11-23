@@ -100,10 +100,10 @@ changes/
 ## 6. 当前快照（2026-11-24）
 
 - 源码分支：`main`
-- 本地 HEAD：`4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02）
-- 远程 `origin/main`：`4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02，已上线）
+- 本地 HEAD：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`（Sprint 03）
+- 远程 `origin/main`：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`（Sprint 03，已上线）
 - 源码工作区：干净
 - 最近审计基线：`526397a3c1b63445b33802f8f436b69ca475841a`
-- 当前阶段：Sprint 01 + Sprint 02 均已上线（Pages 哈希 `ce1ad20…`）；没有已批准的新开发任务。
+- 当前阶段：Sprint 01/02/03 均已上线（Pages 哈希 `cf002d2…`）：手机端界面/地图、系统菜单抑制、三套飞船皮肤；没有已批准的新开发任务。
 
 详见 [`PROJECT-STATUS.md`](PROJECT-STATUS.md)。

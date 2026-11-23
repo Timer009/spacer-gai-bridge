@@ -2,6 +2,38 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 03 手机端界面与飞船皮肤（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：最终 2501 行；SHA1 `cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58`。
+- `README.md`：设置面板说明补充飞船外观。
+- 源码 commits：`7d3a5cf`（站点名）、`7e5cb67`（触控/HUD）、`92df820`（地图/UI）、`8cd40cd`（皮肤）。
+
+### Added / Fixed
+
+- D4 HUD 与开场改用站点名「小行星带」。
+- 手机竖屏航线图改纵向列表；点站点选择、再点一次出发。
+- 触控方向/点火键只在飞行状态显示；地图增加统计按钮。
+- HUD 上移避开按钮与安全区；按钮对比度、按下反馈、pointer capture。
+- 抑制长按系统菜单/选择提示（`contextmenu` / `selectstart` / `touch-callout`）。
+- 三套飞船皮肤：经典矢量 / 猎鹰 9 / 星舰；设置面板切换并持久化 `vl_cfg.skin`。
+
+### Verification
+
+- 三套皮肤各十关软着陆 30/30，均 3★；碰撞包络 −14 / +9。
+- 三套皮肤坠毁正常；合法/非法/旧档皮肤配置兼容。
+- 390×844、320×568 地图/面板布局与触控推力测试通过。
+- 桌面地图点击与十关回归通过。
+- 测试四键已清空。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58`。
+
 ## 2026-11-23 — 报告仓库初始化
 
 ### Added
