@@ -101,9 +101,9 @@ changes/
 
 - 源码分支：`main`
 - 本地 HEAD：`4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02）
-- 远程 `origin/main`：`dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`（Sprint 01，已上线）
+- 远程 `origin/main`：`4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02，已上线）
 - 源码工作区：干净
 - 最近审计基线：`526397a3c1b63445b33802f8f436b69ca475841a`
-- 当前阶段：Sprint 01 已上线（Pages 哈希 `9fa8125…`）；Sprint 02 已在本地提交并通过自动测试，**尚未推送、未上线**；没有已批准的新开发任务。
+- 当前阶段：Sprint 01 + Sprint 02 均已上线（Pages 哈希 `ce1ad20…`）；没有已批准的新开发任务。
 
 详见 [`PROJECT-STATUS.md`](PROJECT-STATUS.md)。

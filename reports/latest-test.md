@@ -16,12 +16,12 @@
 | 测试环境 | Windows，本地静态 HTTP 服务，内置浏览器 |
 | 视口 | 1280×720（桌面）与 390×844（移动竖屏） |
 | 驱动方式 | `window.game` 测试钩子 + 合成 `KeyboardEvent` / `PointerEvent` + 同步 `game.tick(ms)` |
-| 部署状态 | Sprint 01 已推送为 `dd6ac72`；Sprint 02 见第 4 节，未推送 |
+| 部署状态 | Sprint 01 已推送为 `dd6ac72`；Sprint 02 已推送为 `4d20098` |
 
 ### 重要说明
 
 - Sprint 01 已作为 `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef` 推送，Pages 已核对为 Sprint 01 哈希。
-- Sprint 02 的测试对象是本地 `4d20098`，**未推送、未上线**；结果见第 4 节。
+- Sprint 02 已作为 `4d200989c3198fde50683d6cdcb375c3ba7a2480` 推送，Pages 已核对为 Sprint 02 哈希；结果见第 4 节。
 - 本报告第 2–3 节的测试基线为 `b9d12a7` + Sprint 01 工作区修改；该修改随后作为 `dd6ac72` 上线。
 - 十关着陆测试使用 `game.jump()` 装载关卡，再用 `teleport()` 把飞船放到平台上方缓降；这验证的是碰撞、判定、结算与状态机路径，不等同于真人完整试玩。
 - 解锁门槛另用地图 UI 路径单独测试（不经过 `jump()`）。
@@ -220,11 +220,11 @@ vl_stats
 |---|---|
 | 测试时间 | 2026-11-24 00:00–00:03 +08:00 |
 | 本地 HEAD | `4d200989c3198fde50683d6cdcb375c3ba7a2480` |
-| 远程 `origin/main` | `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`（Sprint 01，已上线） |
+| 远程 `origin/main` | `4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02，已上线） |
 | 工作区 | 干净 |
 | 被测文件 | `vector-lander/index.html`，2255 行 |
 | 文件 SHA1 | `ce1ad20b296a084961f7b9798d2d3d995e228192` |
-| 部署状态 | **本地提交，未推送、未上线** |
+| 部署状态 | **已推送 `4d20098`，已上线**；Pages 哈希 `ce1ad20…` 已核对 |
 
 ### 4.2 结果总览
 
@@ -361,6 +361,6 @@ vl_cfg = { gScale:"x", thrust:999, burn:-1, vyMax:null, vxMax:0,
 
 ## 6. 结论
 
-- **Sprint 01** 已作为 `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef` 推送，Pages 文件哈希已核对为 `9fa8125…`；其修复已在线。
-- **Sprint 02** 位于本地 `4d200989c3198fde50683d6cdcb375c3ba7a2480`，A–F 之外的 5 项低风险修复与存档硬化通过自动化验证，但**未推送、未上线**。
-- 测试数据已清理；本报告不能作为“Sprint 02 已在线”的证据。
+- **Sprint 01** 已作为 `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef` 推送，Pages 文件哈希已核对为 `9fa8125…`。
+- **Sprint 02** 已作为 `4d200989c3198fde50683d6cdcb375c3ba7a2480` 推送，Pages 文件哈希已核对为 `ce1ad20…`；A–F 之外的 5 项低风险修复与存档硬化均已上线。
+- 测试数据已清理；本报告可作为两次上线后行为的证据。

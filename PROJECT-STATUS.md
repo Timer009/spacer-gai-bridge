@@ -8,16 +8,16 @@
 | 字段 | 值 |
 |---|---|
 | 项目名称 | 矢量着陆 Vector Lander — 太阳系航线（仓库名 `Spacer`） |
-| 最后更新时间 | 2026-11-24 00:03 +08:00（Asia/Shanghai） |
+| 最后更新时间 | 2026-11-24 00:09 +08:00（Asia/Shanghai） |
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `main` |
-| 本地 HEAD（完整 SHA） | `4d200989c3198fde50683d6cdcb375c3ba7a2480`（Sprint 02，本地） |
-| 远程 `origin/main` | `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`（Sprint 01，已上线） |
-| 工作区 | 干净（本地 HEAD = `4d20098`） |
+| 当前完整 Git commit SHA | `4d200989c3198fde50683d6cdcb375c3ba7a2480` |
+| 远程 `origin/main` | `4d200989c3198fde50683d6cdcb375c3ba7a2480` |
+| 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 01 已上线；Sprint 02 本地完成并提交，**未推送、未上线**；无已批准的新开发任务 |
+| 当前开发阶段 | Sprint 01 + Sprint 02 均已上线；无已批准的新开发任务 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -26,9 +26,9 @@
 ## 2. 源码版本状态
 
 ```text
-local branch : main
-local HEAD   : 4d200989c3198fde50683d6cdcb375c3ba7a2480  (Sprint 02)
-origin/main  : dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef  (Sprint 01)
+branch       : main
+HEAD         : 4d200989c3198fde50683d6cdcb375c3ba7a2480
+origin/main  : 4d200989c3198fde50683d6cdcb375c3ba7a2480
 worktree     : clean
 file         : vector-lander/index.html
 lines        : 2255
@@ -38,15 +38,15 @@ SHA1         : ce1ad20b296a084961f7b9798d2d3d995e228192
 线上 Pages 当前对应的游戏文件：
 
 ```text
-Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
-状态           : 已通过 Pages 页面哈希核对
+Pages hash : ce1ad20b296a084961f7b9798d2d3d995e228192
+状态       : 已通过 Pages 页面哈希核对（2026-11-24）
 ```
 
 重要说明：
 
-- **Sprint 01 已上线**：远程 `dd6ac72`，Pages 已更新，线上文件 SHA1 为 `9fa8125…`。
-- **Sprint 02 仅在本地**：本地提交 `4d20098`，没有推送到 Spacer；线上仍是 Sprint 01。
-- 报告中的 Sprint 02 测试结果对应本地 `4d20098`，不能视为线上行为。
+- **Sprint 01**：`dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`，已上线。
+- **Sprint 02**：`4d200989c3198fde50683d6cdcb375c3ba7a2480`，已推送、已上线。
+- 当前线上与本地 `main` 一致，均为 Sprint 02。
 
 ## 3. 任务状态
 
@@ -54,14 +54,14 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 
 - 十站太阳系战役、平台三形态、天象系统、六种障碍、星级/解锁/统计/航线图。
 - 2026-11-23：只读审计（基线 `526397a`），产出 P0/P1/P2 问题清单。
-- 2026-11-23：Sprint 01 核心稳定性修复（提交 `dd6ac72`，已推送、已上线）：
+- Sprint 01（`dd6ac72`，已上线）：
   - 解锁校验统一入口
   - 陨石半径/渲染修复
   - 存档 `unlocked` 校验
   - gameover 后地图飞船数显示
   - 移动端地图输入
   - 统计面板指针穿透
-- 2026-11-23/24：Sprint 02 低风险修复（本地提交 `4d20098`，未推送）：
+- Sprint 02（`4d20098`，已上线）：
   - 漂移平台完整包络重叠检测（P2-5）
   - 存档进一步硬化（`vl_cfg`、`vl_best`、`vl_stats`、`progress.stars`）
   - 统计面板键盘确认键只关面板
@@ -71,11 +71,11 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 ### 进行中
 
 - 无代码任务正在进行。
-- 等待用户决定是否将 Sprint 02（本地 `4d20098`）推送到 Spacer 并上线。
+- 等待用户决定是否继续处理剩余 P2-6 / P2-7 / P2-8，或批准新玩法。
 
 ### 当前任务边界
 
-- Sprint 02 的源码提交在本地，未推送；不得假定线上已包含。
+- 当前线上包含 Sprint 01 + Sprint 02。
 - 报告中的“下一阶段建议”不是已批准任务。
 
 ## 4. 问题统计
@@ -84,37 +84,39 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 
 - “审计条目”按 `reports/latest-audit.md` 的 P0/P1/P2 编号。
 - P2 共 13 条，其中 P2-11 经复核不成立，P2-12 为信息性/既定取舍；可执行条目为 11 条。
-- “线上 `dd6ac72`”= Sprint 01；`4d20098` = Sprint 02 本地。
+- 当前线上 `4d20098` 包含 Sprint 01 + Sprint 02。
 
-| 严重度 | 可执行条目 | 线上 `dd6ac72` 仍开放 | 本地 `4d20098` 仍开放 |
-|---|---:|---:|---:|
-| P0 | 1 | 0 | 0 |
-| P1 | 2 | 1 | 1 |
-| P2 | 11 | 7 | 3 |
-| **合计** | **14** | **8** | **4** |
+| 严重度 | 可执行条目 | 当前线上 `4d20098` 仍开放 |
+|---|---:|---:|
+| P0 | 1 | 0 |
+| P1 | 2 | 1 |
+| P2 | 11 | 3 |
+| **合计** | **14** | **4** |
+
+> 对比：Sprint 01 刚上线时仍有 8 项开放；Sprint 02 上线后降至 4 项。
 
 ### 已修复
 
 | 阶段 | 编号 | 修复 |
 |---|---|---|
-| Sprint 01（已上线） | P0-1 | 统一解锁校验 |
-| Sprint 01（已上线） | P1-1 | 陨石头部/辉光 |
-| Sprint 01（已上线） | P2-1 | `progress.unlocked` 校验 |
-| Sprint 01（已上线） | P2-2 | gameover 地图飞船数 |
-| Sprint 01（已上线） | P2-3 | 触屏地图误发车 |
-| Sprint 01（已上线） | P2-4 | 统计面板指针穿透 |
-| Sprint 02（本地） | P2-5 | 漂移平台重叠检测 |
-| Sprint 02（本地） | P2-9 | 死代码 `drawPadLabel` |
-| Sprint 02（本地） | P2-10 | 未使用 `ax/ay` |
-| Sprint 02（本地） | P2-13 | 爆炸粒子上限 |
-| Sprint 02（本地） | SAVE-01 | `vl_cfg` / `vl_best` / `vl_stats` / `stars` 存档硬化（审计外新增） |
-| Sprint 02（本地） | STATS-MODAL-01 | 统计面板键盘确认键（审计外新增） |
+| Sprint 01 | P0-1 | 统一解锁校验 |
+| Sprint 01 | P1-1 | 陨石头部/辉光 |
+| Sprint 01 | P2-1 | `progress.unlocked` 校验 |
+| Sprint 01 | P2-2 | gameover 地图飞船数 |
+| Sprint 01 | P2-3 | 触屏地图误发车 |
+| Sprint 01 | P2-4 | 统计面板指针穿透 |
+| Sprint 02 | P2-5 | 漂移平台重叠检测 |
+| Sprint 02 | P2-9 | 死代码 `drawPadLabel` |
+| Sprint 02 | P2-10 | 未使用 `ax/ay` |
+| Sprint 02 | P2-13 | 爆炸粒子上限 |
+| Sprint 02 | SAVE-01 | `vl_cfg` / `vl_best` / `vl_stats` / `stars` 存档硬化（审计外新增） |
+| Sprint 02 | STATS-MODAL-01 | 统计面板键盘确认键（审计外新增） |
 
-### 本地仍开放的问题
+### 仍开放的问题
 
 | 编号 | 问题 | 状态 / 说明 |
 |---|---|---|
-| P1-2 | 仓库本地 `http.proxy` 配置 | 环境项。配置仍为 `http://127.0.0.1:10808`；当前端口可用。Sprint 01 推送已验证。 |
+| P1-2 | 仓库本地 `http.proxy` 配置 | 环境项。配置仍为 `http://127.0.0.1:10808`；当前端口可用。Sprint 01/02 推送均已验证。 |
 | P2-6 | 漂移平台削平地形留下“无平台平地” | 已确认是视觉问题；`amp < w/2`，冰筏不会漂出削平段。未修改。 |
 | P2-7 | 预测线不模拟旋转，忽略岩柱/陨石/间歇泉 | 已确认；预测用中心点，真实碰撞用船体点。未修改。 |
 | P2-8 | 预测视距固定 4 秒 | 高空低重力时可能到不了地面，无撞击标记。未修改。 |
@@ -150,7 +152,7 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 | 存档 `unlocked` 异常 | 6 例通过；best/stats 保留 |
 | 移动端地图/统计面板 | 通过 |
 
-### Sprint 02（本地 `4d20098`，未上线）
+### Sprint 02（已上线 `4d20098`）
 
 | 项目 | 结果 |
 |---|---|
@@ -183,9 +185,9 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 | 规模 | +29 / −7；2212 行 |
 | SHA1 | `9fa81257742fdfca0b705a62f364f77bd83177c4` |
 | 内容 | 解锁校验、陨石渲染、存档 `unlocked`、地图飞船数、触屏地图、统计面板指针 |
-| 状态 | 已推送；Pages 哈希已核对 |
+| 状态 | 已推送、已上线 |
 
-### Sprint 02 — 本地提交，未推送
+### Sprint 02 — 已上线
 
 | 项 | 内容 |
 |---|---|
@@ -194,11 +196,10 @@ Sprint 01 hash : 9fa81257742fdfca0b705a62f364f77bd83177c4
 | 规模 | +58 / −15；2255 行 |
 | SHA1 | `ce1ad20b296a084961f7b9798d2d3d995e228192` |
 | 内容 | 存档硬化、漂移平台包络、统计面板键盘、爆炸粒子上限、死代码清理 |
-| 状态 | 本地 `main`，工作区干净；**未推送** |
+| 状态 | 已推送、已上线；Pages 哈希已核对 |
 
 ## 8. 下一阶段建议（未批准）
 
-1. 用户决定是否将 Sprint 02（`4d20098`）推送到 Spacer 并验证 Pages。
-2. 若继续修缺陷，处理 P2-6（视觉）、P2-7/P2-8（预测精度）；这三项会改变可见行为，建议单独一批。
-3. 真机触屏、音频与十关人工试玩应在上线前完成。
-4. 新玩法（Ocean Recovery / Tower Catch / 火箭皮肤）必须等用户单独确认；不得把本报告建议当作批准。
+1. 若继续修缺陷，处理 P2-6（视觉）、P2-7/P2-8（预测精度）；这三项会改变可见行为，建议单独一批。
+2. 真机触屏、音频与十关人工试玩应在上线前完成。
+3. 新玩法（Ocean Recovery / Tower Catch / 火箭皮肤）必须等用户单独确认；不得把本报告建议当作批准。

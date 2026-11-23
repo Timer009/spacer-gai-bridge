@@ -20,12 +20,12 @@
 - 本次未修改、未提交、未推送 Spacer 源码仓库。
 - 本次未上传源码副本、凭据、个人路径或用户私人数据。
 
-## 2026-11-24 — Spacer Sprint 02 存档硬化与漂移平台修复（本地，未推送）
+## 2026-11-24 — Spacer Sprint 02 存档硬化与漂移平台修复（已上线）
 
 ### Changed
 
 - `vector-lander/index.html`：+58 / −15；2255 行；SHA1 `ce1ad20b296a084961f7b9798d2d3d995e228192`。
-- 源码本地 commit：`4d200989c3198fde50683d6cdcb375c3ba7a2480`。
+- 源码 commit：`4d200989c3198fde50683d6cdcb375c3ba7a2480`。
 
 ### Fixed
 
@@ -47,7 +47,8 @@
 
 ### Commit status
 
-- **本地 `main`，未推送**。远程 Spacer `main` 仍为 Sprint 01 `dd6ac72`；线上未包含 Sprint 02。
+- 已推送到 Spacer `main`：`4d200989c3198fde50683d6cdcb375c3ba7a2480`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `ce1ad20b296a084961f7b9798d2d3d995e228192`。
 
 ## 2026-11-23 — Spacer Sprint 01 核心稳定性修复（已上线）
 
