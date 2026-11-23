@@ -2,6 +2,33 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 06 iOS 旋转崩溃热修（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：2628 行；SHA1 `7852b69f222129803ea364635d7a93649dd19855`。
+
+### Fixed
+
+- 移除 `requestFullscreen` / `screen.orientation.lock`，避免 iOS Safari 旋转时崩溃。
+- 横屏提示按钮改为「如何横屏」，只显示关闭竖屏锁定说明。
+- `resize` / `orientationchange` 改为防抖，减少旋转时重复重建画布。
+- 移除触控按钮 `backdrop-filter`，降低 iOS 合成压力。
+
+### Verification
+
+- 源码无崩溃 API 与 `backdrop-filter`；「如何横屏」不调用全屏 API。
+- 旋转后防抖 resize 到 844×390，横屏布局生效。
+- 十关软着陆 10/10；无 `window.error`；测试四键已清空。
+- 本地无法复现 iOS WebKit 崩溃；真机需重点确认。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `7852b69f222129803ea364635d7a93649dd19855`。
+
 ## 2026-11-24 — Spacer Sprint 05 横屏入口与长按菜单修复（已上线）
 
 ### Changed

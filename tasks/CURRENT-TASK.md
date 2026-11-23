@@ -1,6 +1,6 @@
-# CURRENT TASK — Spacer Sprint 05 手机横屏入口与长按菜单修复
+# CURRENT TASK — Spacer Sprint 06 iOS 旋转崩溃热修
 
-> 这是**用户已确认**的当前开发任务记录。Sprint 01/02/03/04/05 均已推送并上线。
+> 这是**用户已确认**的当前开发任务记录。Sprint 01/02/03/04/05/06 均已推送并上线。
 >
 > 本文件之外的建议、审计 TODO、下一阶段规划都**不是**已批准任务。
 
@@ -8,22 +8,22 @@
 
 | 字段 | 值 |
 |---|---|
-| Task ID | `SPACER-SPRINT-05` |
-| 名称 | 手机横屏入口与 iOS 长按菜单修复 |
-| 确认时间 | 2026-11-24（用户指令：横屏用不了，系统菜单还会出来） |
+| Task ID | `SPACER-SPRINT-06` |
+| 名称 | iOS Safari 旋转崩溃热修 |
+| 确认时间 | 2026-11-24（用户反馈：横屏后 Safari 提示网页已崩溃） |
 | 源码分支 | `main` |
-| 本地 HEAD | `eab719daf6f7360ca24eda82b3daa61695da5f07` |
-| 远程 `origin/main` | `eab719daf6f7360ca24eda82b3daa61695da5f07` |
+| 本地 HEAD | `e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95` |
+| 远程 `origin/main` | `e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95` |
 | 工作区 | 干净 |
-| 文件 | `vector-lander/index.html`，2639 行；SHA1 `b9e23824ae73768ad84fb1d1162298edc81d4e61` |
+| 文件 | `vector-lander/index.html`，2628 行；SHA1 `7852b69f222129803ea364635d7a93649dd19855` |
 | 状态 | **已完成 / 已推送 / 已上线** |
 
 ## 2. 已确认范围
 
-- 竖屏提示增加「尝试自动横屏」；设置面板增加「尝试横屏」入口。
-- `orientationchange` 后强制 `resize`，修复旋转后仍用竖屏布局。
-- 触控方向/点火键改 CSS 三角形，齿轮/统计改 SVG，移除可选中文字。
-- 全局 `user-select` / `touch-callout` / `contextmenu` / `selectstart` 抑制并清空选区。
+- 移除 `requestFullscreen` / `screen.orientation.lock`，改为手动横屏说明。
+- 横屏提示按钮改为「如何横屏」，显示关闭竖屏锁定的说明。
+- `resize` / `orientationchange` 改为防抖，减少旋转时重复重建画布。
+- 移除触控按钮 `backdrop-filter`，降低 iOS 合成压力。
 
 ## 3. 明确不做
 
@@ -37,12 +37,10 @@
 
 | 验收项 | 结果 |
 |---|---|
-| 触控键无文字 | ✅ CSS 三角形 |
-| 齿轮/统计 SVG | ✅ 点击正常 |
-| 自动横屏入口 | ✅ 失败提示正确 |
-| 旋转后布局 | ✅ 844×390 画布/横屏布局 |
-| 长按菜单抑制 | ✅ 事件拦截 + 清空选区 |
-| 触控推力 | ✅ 按住/滑出/抬起保持 |
+| 崩溃 API 移除 | ✅ 源码无 `requestFullscreen` / `orientation.lock` |
+| 横屏提示 | ✅ 只显示手动旋转说明 |
+| 旋转后布局 | ✅ 防抖后 844×390 画布/横屏布局 |
+| 合成压力 | ✅ `backdrop-filter` 已移除 |
 | 十关回归 | ✅ 10/10 |
 | 测试数据清理 | ✅ 四键为空 |
 
@@ -50,6 +48,6 @@
 
 ## 5. 当前待决策
 
-1. 是否继续处理 P2-6 / P2-7 / P2-8（会改变可见行为，建议单独一批）。
-2. 真机 iPhone 竖屏锁定、自动横屏 API、长按菜单、横屏布局与音频需要人工确认。
+1. 真机 iPhone 旋转后是否仍崩溃（重点确认）。
+2. 是否继续处理 P2-6 / P2-7 / P2-8（会改变可见行为，建议单独一批）。
 3. 是否批准新玩法；未批准前不得开始。

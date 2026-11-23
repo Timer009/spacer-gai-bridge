@@ -2,7 +2,7 @@
 
 > **历史证据说明**：本报告是 2026-11-23 对基线 `526397a` 的只读审计，已从源码仓库的 `AUDIT-REPORT.txt` 迁移为 Markdown。技术内容保留；本地工作区绝对路径已脱敏。
 >
-> **当前状态提醒**：Sprint 01 已作为 `dd6ac72` 上线；Sprint 02 已作为 `4d20098` 上线；Sprint 03 已作为 `8cd40cd` 上线（手机端界面/地图/系统菜单抑制 + 三套飞船皮肤）；Sprint 04 已作为 `0d99d8a` 上线（手机横屏布局与旋转提示）；Sprint 05 已作为 `eab719d` 上线（自动横屏入口、旋转后 resize、长按菜单抑制）。P0-1、P1-1、P2-1、P2-2、P2-3、P2-4 已随 Sprint 01 上线；P2-5、P2-9、P2-10、P2-13 已随 Sprint 02 上线。完整状态见 [PROJECT-STATUS.md](../PROJECT-STATUS.md) 与 [latest-test.md](latest-test.md)。
+> **当前状态提醒**：Sprint 01 已作为 `dd6ac72` 上线；Sprint 02 已作为 `4d20098` 上线；Sprint 03 已作为 `8cd40cd` 上线（手机端界面/地图/系统菜单抑制 + 三套飞船皮肤）；Sprint 04 已作为 `0d99d8a` 上线（手机横屏布局与旋转提示）；Sprint 05 已作为 `eab719d` 上线（自动横屏入口、旋转后 resize、长按菜单抑制）；Sprint 06 已作为 `e56797e` 上线（移除 iOS Fullscreen/Orientation Lock 崩溃风险）。P0-1、P1-1、P2-1、P2-2、P2-3、P2-4 已随 Sprint 01 上线；P2-5、P2-9、P2-10、P2-13 已随 Sprint 02 上线。完整状态见 [PROJECT-STATUS.md](../PROJECT-STATUS.md) 与 [latest-test.md](latest-test.md)。
 >
 > 本报告中的行号均对应基线 `526397a` 的 2190 行版本，不保证对应最新工作区。
 
@@ -708,7 +708,7 @@ M。
 
 ---
 
-# 附录：Sprint 01 / 02 / 03 / 04 / 05 后状态
+# 附录：Sprint 01 / 02 / 03 / 04 / 05 / 06 后状态
 
 > 此附录不属于 2026-11-23 原始审计，由报告仓库维护者补充，便于后续 Agent 判断当前状态。
 >
@@ -717,6 +717,7 @@ M。
 > - Sprint 03：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`，已推送、已上线（手机端界面/地图/系统菜单抑制 + 三套皮肤）；审计问题集不变，P1-2、P2-6/P2-7/P2-8 仍开放。
 > - Sprint 04：`0d99d8af86b88bef82ca270b0b1eb08a5211a385`，已推送、已上线（竖屏旋转提示、横屏双栏标题、横屏地图/HUD、安全区）；审计问题集不变。
 > - Sprint 05：`eab719daf6f7360ca24eda82b3daa61695da5f07`，已推送、已上线（自动横屏入口、旋转后 resize、CSS/SVG 图标、长按菜单抑制）；审计问题集不变。
+> - Sprint 06：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`，已推送、已上线（移除 Fullscreen/Orientation Lock 与 backdrop-filter，防抖 resize）；审计问题集不变。
 
 | 编号 | 基线状态 | Sprint 01 线上 `dd6ac72` | Sprint 02 线上 `4d20098` |
 |---|---|---|---|
@@ -747,6 +748,7 @@ M。
 | MOBILE-01 | 手机端触控键/键盘提示/HUD 混在一起；地图过密；长按弹系统菜单 | 已修复（触控键仅飞行显示、竖屏列表、统计按钮、长按抑制） |
 | MOBILE-02 | 手机竖屏视野过窄、横屏标题文字重叠 | 已修复（竖屏旋转提示、横屏双栏标题、横屏地图/HUD、安全区） |
 | MOBILE-03 | 横屏入口只有「继续竖屏」；旋转后未 resize；按钮文字触发 iOS 长按菜单 | 已修复（自动横屏入口、orientationchange resize、CSS/SVG 图标、长按抑制） |
+| MOBILE-04 | iOS Safari 旋转时 Fullscreen/Orientation Lock 导致网页崩溃 | 已修复（移除两个 API 与按钮 backdrop-filter，改为手动横屏说明 + 防抖 resize） |
 | SKIN-01 | 只有单一三角形飞船 | 已新增经典矢量 / 猎鹰 9 / 星舰三套皮肤与选择器 |
 
 当前完整状态与测试证据：

@@ -344,7 +344,7 @@ vl_cfg = { gScale:"x", thrust:999, burn:-1, vyMax:null, vxMax:0,
 #### T30 粒子上限说明
 
 - `explode()` 后新增 `PARTICLE_CAP = 900` 裁剪。
-- 这是代码级上限验证；**没有**对实际粒子数量/内存曲线做定量测量，见第 8 节。
+- 这是代码级上限验证；**没有**对实际粒子数量/内存曲线做定量测量，见第 9 节。
 
 ## 5. Sprint 03 手机端与飞船皮肤（2026-11-24）
 
@@ -497,14 +497,46 @@ vl_cfg = { gScale:"x", thrust:999, burn:-1, vyMax:null, vxMax:0,
 - 移动端统计/齿轮在 SVG 内容下仍可点击；统计打开时点地图只关面板，不误选。
 - 十关软着陆 10/10；无 `window.error`；测试四键清空。
 
-## 8. 未执行 / 需要人工测试
+## 8. Sprint 06 iOS 旋转崩溃热修（2026-11-24）
+
+### 8.1 测试对象
+
+| 字段 | 值 |
+|---|---|
+| 测试时间 | 2026-11-24 01:22–01:27 +08:00 |
+| 本地/远程 HEAD | `e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95` |
+| 被测文件 | `vector-lander/index.html`，2628 行 |
+| 文件 SHA1 | `7852b69f222129803ea364635d7a93649dd19855` |
+| 部署状态 | 已推送、已上线；Pages 哈希 `7852b69…` 已核对 |
+
+### 8.2 结果总览
+
+| ID | 测试 | 结果 |
+|---|---|---|
+| T63 | 移除崩溃 API | ✅ 源码无 `requestFullscreen` / `screen.orientation.lock` |
+| T64 | 横屏提示按钮 | ✅ 不再调用全屏 API，只显示手动旋转说明 |
+| T65 | 旋转后 resize | ✅ 防抖后 844×390 画布/横屏布局 |
+| T66 | 合成压力 | ✅ 触控按钮 `backdrop-filter` 已移除 |
+| T67 | 十关回归 | ✅ 10/10 |
+| T68 | 清档 | ✅ 四键为空 |
+
+### 8.3 详细结果
+
+- 源码 grep：`requestFullscreen`、`screen.orientation.lock`、`backdrop-filter` 均无结果。
+- 竖屏点击「如何横屏」：`requestFullscreen` 调用计数保持 `false`；提示改为「请关闭 iPhone 竖屏锁定，把手机横过来」。
+- 竖屏 `body.rotate-hint`；切到 844×390 并触发 `orientationchange`，防抖 350ms 后画布 844×390，`body.touch-play`，横屏布局生效。
+- 十关软着陆 10/10；无 `window.error`；测试四键清空。
+- 说明：本地无法复现 iOS WebKit 崩溃；移除 API 是对崩溃根因的针对性修复，真机需再次确认。
+
+## 9. 未执行 / 需要人工测试
 
 以下项目**没有**在本次自动化中完成，不得视为通过：
 
 - 真机触屏：按钮可见性、热区、手指滑出、多指、iOS Safari。
 - iPhone 竖屏锁定：控制中心开启竖屏锁定后，网页无法强制横屏；需人工关闭锁定后旋转。
-- iPhone 自动横屏：`requestFullscreen` / `screen.orientation.lock` 在真实 iOS Safari 的支持情况；失败提示是否出现。
-- iPhone 旋转后布局：`orientationchange` 后画布是否切到 844×390、横屏标题/地图是否生效。
+- iPhone 自动横屏：`requestFullscreen` / `screen.orientation.lock` 已移除；现在只显示手动旋转说明。
+- iPhone 旋转崩溃：真机旋转后 Safari 是否仍报「网页已崩溃」需重点确认；本次已移除 Fullscreen/Orientation Lock 与按钮 `backdrop-filter`。
+- iPhone 旋转后布局：`orientationchange` 防抖 resize 后画布是否切到 844×390、横屏标题/地图是否生效。
 - iPhone 长按系统菜单（复制/翻译/分享）：自动测试只验证 `contextmenu`/`selectstart` 被拦截与按钮无文字，真实 iOS 长按菜单仍需人工确认。
 - 皮肤在真机小屏下的辨识度与尾焰观感。
 - 音频：首次手势解锁、推力音、爆炸/着陆音、环境音、静音。
@@ -516,11 +548,12 @@ vl_cfg = { gScale:"x", thrust:999, burn:-1, vyMax:null, vxMax:0,
 - 损坏存档测试为明确构造的样本，不是全集模糊测试；跨版本迁移矩阵仍未覆盖。
 - 猎鹰 9 / 星舰碰撞点从 7 点加密到 16 点；包络保持 −14/+9，但极端接触判定可能比旧版更精确。
 
-## 9. 结论
+## 10. 结论
 
 - **Sprint 01** 已作为 `dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef` 推送，Pages 哈希 `9fa8125…`。
 - **Sprint 02** 已作为 `4d200989c3198fde50683d6cdcb375c3ba7a2480` 推送，Pages 哈希 `ce1ad20…`。
 - **Sprint 03** 已作为 `8cd40cd501abba4c55bd5d000cc984a9b1e84c95` 推送，Pages 哈希 `cf002d2…`；手机竖屏地图、触控/HUD、系统菜单抑制与三套皮肤均已上线。
 - **Sprint 04** 已作为 `0d99d8af86b88bef82ca270b0b1eb08a5211a385` 推送，Pages 哈希 `9fab3e5…`；竖屏旋转提示、横屏双栏标题、横屏地图/HUD 与安全区已上线。
 - **Sprint 05** 已作为 `eab719daf6f7360ca24eda82b3daa61695da5f07` 推送，Pages 哈希 `b9e2382…`；自动横屏入口、旋转后 resize、CSS/SVG 图标与长按菜单抑制已上线。
-- 测试数据已清理；真机 iPhone 旋转/竖屏锁定、长按菜单、横屏布局与音频仍需人工确认。
+- **Sprint 06** 已作为 `e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95` 推送，Pages 哈希 `7852b69…`；移除 Fullscreen/Orientation Lock 与 `backdrop-filter`，改为防抖 resize 和手动横屏说明。
+- 测试数据已清理；iOS Safari 旋转崩溃是否消除、竖屏锁定、长按菜单、横屏布局与音频仍需人工确认。
