@@ -20,7 +20,36 @@
 - 本次未修改、未提交、未推送 Spacer 源码仓库。
 - 本次未上传源码副本、凭据、个人路径或用户私人数据。
 
-## 2026-11-23 — Spacer Sprint 01 核心稳定性修复（工作区，未提交）
+## 2026-11-24 — Spacer Sprint 02 存档硬化与漂移平台修复（本地，未推送）
+
+### Changed
+
+- `vector-lander/index.html`：+58 / −15；2255 行；SHA1 `ce1ad20b296a084961f7b9798d2d3d995e228192`。
+- 源码本地 commit：`4d200989c3198fde50683d6cdcb375c3ba7a2480`。
+
+### Fixed
+
+- P2-5：漂移平台按完整漂移包络（基准中心 ± amp）检测重叠。
+- SAVE-01：`vl_cfg` 数值范围/布尔类型、`vl_best`、`vl_stats`、`progress.stars` 全部校验。
+- STATS-MODAL-01：统计面板打开时，`空格/Enter` 只关闭面板，不出发。
+- P2-13：爆炸粒子增加 `PARTICLE_CAP=900` 上限。
+- P2-9 / P2-10：删除 `drawPadLabel` 与未使用 `ax/ay`。
+
+### Verification
+
+- 合法旧存档完整保留；损坏存档安全回落；地图正常渲染，无 `window.error`。
+- 第 8 关 240 次装载（padW 1.2 / 2.5）零重叠，最小间距 142.93 / 154.75。
+- 统计面板第一次空格关面板，第二次空格出发。
+- 十关启动 10/10；十关软着陆 10/10；触屏地图回归通过。
+- 测试四键已清空，页面回到标题。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- **本地 `main`，未推送**。远程 Spacer `main` 仍为 Sprint 01 `dd6ac72`；线上未包含 Sprint 02。
+
+## 2026-11-23 — Spacer Sprint 01 核心稳定性修复（已上线）
 
 ### Changed
 
@@ -48,4 +77,5 @@
 
 ### Commit status
 
-- **未提交、未推送**。远程 Spacer `main` 仍为 `b9d12a7`。
+- 已推送到 Spacer `main`：`dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `9fa81257742fdfca0b705a62f364f77bd83177c4`。
