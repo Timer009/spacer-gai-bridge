@@ -2,6 +2,32 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 05 横屏入口与长按菜单修复（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：2639 行；SHA1 `b9e23824ae73768ad84fb1d1162298edc81d4e61`。
+
+### Added / Fixed
+
+- 竖屏提示增加「尝试自动横屏」；设置面板增加「尝试横屏」入口。
+- `orientationchange` 后强制 `resize`，修复旋转后仍使用竖屏布局。
+- 触控方向/点火键改 CSS 三角形，齿轮/统计改 SVG，移除可选中文字。
+- 全局 `user-select` / `touch-callout` / `contextmenu` / `selectstart` 抑制并清空选区。
+
+### Verification
+
+- 触控键无文本节点；CSS 三角形与 SVG 按钮点击正常。
+- 自动横屏失败提示、旋转后 844×390 布局、触控推力、统计/齿轮均通过。
+- 十关软着陆 10/10；无 `window.error`；测试四键已清空。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`eab719daf6f7360ca24eda82b3daa61695da5f07`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `b9e23824ae73768ad84fb1d1162298edc81d4e61`。
+
 ## 2026-11-24 — Spacer Sprint 04 手机横屏布局（已上线）
 
 ### Changed
