@@ -9,6 +9,7 @@
 | 2026-11-24 | `SPACER-SPRINT-04` | 手机横屏布局、旋转提示、横屏标题/地图/HUD | 已上线（`0d99d8a`） | [reports/latest-test.md](../reports/latest-test.md) |
 | 2026-11-24 | `SPACER-SPRINT-05` | 自动横屏入口、旋转后 resize、CSS/SVG 图标、长按菜单抑制 | 已上线（`eab719d`） | [reports/latest-test.md](../reports/latest-test.md) |
 | 2026-11-24 | `SPACER-SPRINT-06` | iOS Safari 旋转崩溃热修（移除 Fullscreen/Orientation Lock） | 已上线（`e56797e`） | [reports/latest-test.md](../reports/latest-test.md) |
+| 2026-11-24 | `SPACER-SPRINT-07` | 安卓横屏 Canvas 拉伸、5×2 网格地图、HUD/按钮间距 | 已上线（`69c959a`） | [reports/latest-test.md](../reports/latest-test.md) |
 | 2026-11-23 | `BRIDGE-INIT-01` | 初始化 `spacer-gai-bridge` 协作报告仓库 | 已完成（`4839a81`） | 本仓库首次提交 |
 
 ## 说明
@@ -19,5 +20,6 @@
 - `SPACER-SPRINT-04` 已推送到 Spacer `main`，Pages 哈希已核对。
 - `SPACER-SPRINT-05` 已推送到 Spacer `main`，Pages 哈希已核对。
 - `SPACER-SPRINT-06` 已推送到 Spacer `main`，Pages 哈希已核对。
+- `SPACER-SPRINT-07` 已推送到 Spacer `main`，Pages 哈希已核对。
 - 报告仓库初始化不修改 Spacer 源码。
 - 历史任务不自动延续；新任务必须由用户明确确认后写入 `CURRENT-TASK.md`。

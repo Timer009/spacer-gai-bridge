@@ -2,6 +2,32 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 07 安卓横屏画布与网格修复（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：2709 行；SHA1 `51b734839acc87045190c0614df52cac67d20877`。
+
+### Fixed
+
+- Canvas CSS 尺寸与 `innerWidth/innerHeight` 精确同步，并在每帧自愈，修复安卓横屏圆变椭圆。
+- 手机横屏航线图改为 5×2 网格，标题/站点/星级不再拥挤。
+- HUD 上移条件加入 `navigator.maxTouchPoints`，避免安卓横屏按钮压住燃料条。
+- 横屏标题右栏增加暗色底板，降低背景天体干扰。
+
+### Verification
+
+- 640×360 下 Canvas 横纵 CSS/像素比例均为 1；地图节点为圆。
+- 5×2 网格地图截图核对，标题/站点/星级不重叠。
+- HUD/按钮间距 13–28px；十关软着陆 10/10；测试四键已清空。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `51b734839acc87045190c0614df52cac67d20877`。
+
 ## 2026-11-24 — Spacer Sprint 06 iOS 旋转崩溃热修（已上线）
 
 ### Changed

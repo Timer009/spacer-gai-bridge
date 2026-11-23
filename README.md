@@ -100,10 +100,10 @@ changes/
 ## 6. 当前快照（2026-11-24）
 
 - 源码分支：`main`
-- 本地 HEAD：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`（Sprint 06）
-- 远程 `origin/main`：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`（Sprint 06，已上线）
+- 本地 HEAD：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`（Sprint 07）
+- 远程 `origin/main`：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`（Sprint 07，已上线）
 - 源码工作区：干净
 - 最近审计基线：`526397a3c1b63445b33802f8f436b69ca475841a`
-- 当前阶段：Sprint 01/02/03/04/05/06 均已上线（Pages 哈希 `7852b69…`）：手机端界面/地图、系统菜单抑制、三套飞船皮肤、横屏布局；iOS 旋转崩溃热修已移除 Fullscreen/Orientation Lock；没有已批准的新开发任务。
+- 当前阶段：Sprint 01–07 均已上线（Pages 哈希 `51b7348…`）：手机端界面/地图、系统菜单抑制、三套飞船皮肤、横屏布局、iOS 崩溃热修、安卓横屏画布/网格修复；没有已批准的新开发任务。
 
 详见 [`PROJECT-STATUS.md`](PROJECT-STATUS.md)。
