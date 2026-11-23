@@ -8,16 +8,16 @@
 | 字段 | 值 |
 |---|---|
 | 项目名称 | 矢量着陆 Vector Lander — 太阳系航线（仓库名 `Spacer`） |
-| 最后更新时间 | 2026-11-24 00:56 +08:00（Asia/Shanghai） |
+| 最后更新时间 | 2026-11-24 01:11 +08:00（Asia/Shanghai） |
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `main` |
-| 当前完整 Git commit SHA | `8cd40cd501abba4c55bd5d000cc984a9b1e84c95` |
-| 远程 `origin/main` | `8cd40cd501abba4c55bd5d000cc984a9b1e84c95` |
+| 当前完整 Git commit SHA | `0d99d8af86b88bef82ca270b0b1eb08a5211a385` |
+| 远程 `origin/main` | `0d99d8af86b88bef82ca270b0b1eb08a5211a385` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 01/02 + 手机端界面 + 三套飞船皮肤均已上线；无已批准的新开发任务 |
+| 当前开发阶段 | Sprint 01/02/03 + 手机横屏布局均已上线；无已批准的新开发任务 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -27,18 +27,18 @@
 
 ```text
 branch       : main
-HEAD         : 8cd40cd501abba4c55bd5d000cc984a9b1e84c95
-origin/main  : 8cd40cd501abba4c55bd5d000cc984a9b1e84c95
+HEAD         : 0d99d8af86b88bef82ca270b0b1eb08a5211a385
+origin/main  : 0d99d8af86b88bef82ca270b0b1eb08a5211a385
 worktree     : clean
 file         : vector-lander/index.html
-lines        : 2501
-SHA1         : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
+lines        : 2582
+SHA1         : 9fab3e5ed88882a04a7b68b54465241ca9799c6a
 ```
 
 线上 Pages 当前对应的游戏文件：
 
 ```text
-Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
+Pages hash : 9fab3e5ed88882a04a7b68b54465241ca9799c6a
 状态       : 已通过 Pages 页面哈希核对（2026-11-24）
 ```
 
@@ -46,8 +46,9 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 
 - **Sprint 01**：`dd6ac7268165eb1194b6ac968d43cee4b4eaa7ef`，已上线。
 - **Sprint 02**：`4d200989c3198fde50683d6cdcb375c3ba7a2480`，已上线。
-- **Sprint 03（手机端 + 皮肤）**：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`，已推送、Pages 已核对。
-- 当前线上与本地 `main` 一致，均为 Sprint 03。
+- **Sprint 03（手机端 + 皮肤）**：`8cd40cd501abba4c55bd5d000cc984a9b1e84c95`，已上线。
+- **Sprint 04（手机横屏布局）**：`0d99d8af86b88bef82ca270b0b1eb08a5211a385`，已推送、Pages 已核对。
+- 当前线上与本地 `main` 一致，均为 Sprint 04。
 
 ## 3. 任务状态
 
@@ -74,6 +75,11 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
   - 手机竖屏航线图改纵向列表；点选站点，再点一次出发；地图增加统计按钮
   - 长按系统菜单/选择提示抑制；触屏按钮 pointer capture
   - 三套飞船皮肤：经典矢量、猎鹰 9、星舰；设置面板切换并持久化
+- Sprint 04（`0d99d8a`，已上线）：
+  - 手机竖屏显示「请横屏游玩」提示，旋转中暂停；可继续竖屏
+  - 横屏标题改左右双栏，短屏文字不再重叠
+  - 横屏航线图使用触屏提示与统计按钮，站点标签区域可点选
+  - HUD 支持左右安全区，横屏按钮与信息保持间距
 
 ### 进行中
 
@@ -82,7 +88,7 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 
 ### 当前任务边界
 
-- 当前线上包含 Sprint 01 + Sprint 02 + Sprint 03。
+- 当前线上包含 Sprint 01 + Sprint 02 + Sprint 03 + Sprint 04。
 - 报告中的“下一阶段建议”不是已批准任务。
 
 ## 4. 问题统计
@@ -91,17 +97,17 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 
 - “审计条目”按 `reports/latest-audit.md` 的 P0/P1/P2 编号。
 - P2 共 13 条，其中 P2-11 经复核不成立，P2-12 为信息性/既定取舍；可执行条目为 11 条。
-- 当前线上 `8cd40cd` 包含 Sprint 01 + Sprint 02 + Sprint 03。
-- Sprint 03 是手机端与皮肤功能，不新增审计条目，也不改变下列审计问题统计。
+- 当前线上 `0d99d8a` 包含 Sprint 01 + Sprint 02 + Sprint 03 + Sprint 04。
+- Sprint 03/04 是手机端与皮肤/横屏功能，不新增审计条目，也不改变下列审计问题统计。
 
-| 严重度 | 可执行条目 | 当前线上 `8cd40cd` 仍开放 |
+| 严重度 | 可执行条目 | 当前线上 `0d99d8a` 仍开放 |
 |---|---:|---:|
 | P0 | 1 | 0 |
 | P1 | 2 | 1 |
 | P2 | 11 | 3 |
 | **合计** | **14** | **4** |
 
-> 对比：Sprint 01 刚上线时仍有 8 项开放；Sprint 02 上线后降至 4 项；Sprint 03 不改变该数量。
+> 对比：Sprint 01 刚上线时仍有 8 项开放；Sprint 02 上线后降至 4 项；Sprint 03/04 不改变该数量。
 
 ### 已修复
 
@@ -122,6 +128,7 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 | Sprint 03 | HUD-01 | D4 HUD/开场显示站点名「小行星带」（审计外新增） |
 | Sprint 03 | MOBILE-01 | 手机端触控/HUD/航线图/系统菜单交互（审计外新增） |
 | Sprint 03 | SKIN-01 | 三套飞船皮肤与外观选择（审计外新增） |
+| Sprint 04 | MOBILE-02 | 手机横屏布局、旋转提示、横屏标题/地图/HUD（审计外新增） |
 
 ### 仍开放的问题
 
@@ -144,7 +151,8 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 - 统计面板打开时，方向键仍可改变 `mapSel`；确认键已只关闭面板。
 - `window.game.jump()` 是测试钩子，仍可绕过解锁；正常 UI 无入口。
 - P2-6/P2-7/P2-8 的视觉/预测差异仍在。
-- 手机端与皮肤目前用合成触控/桌面视口验证；iPhone 真机长按菜单、`pointer:coarse` 按钮显示、音频仍需人工确认。
+- 手机端与皮肤目前用合成触控/桌面视口验证；iPhone 真机长按菜单、`pointer:coarse` 按钮显示、旋转提示、音频仍需人工确认。
+- 横屏标题在矮屏上已改左右双栏，但背景天体可能与右侧说明文字重叠；如影响阅读可再加暗色底板。
 - 皮肤碰撞点从 7 点加密到 16 点（猎鹰 9 / 星舰），包络仍为机头 −14、底部 +9；极端接触判定可能比旧 7 点更精确。
 
 ## 5. 自动测试结果
@@ -195,9 +203,23 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 | 面板布局 | 390px 宽 300px、320px 宽 292px，三个按钮不溢出 |
 | 桌面回归 | 地图点击、十关软着陆通过 |
 
+### Sprint 04（已上线 `0d99d8a`）
+
+| 项目 | 结果 |
+|---|---|
+| 竖屏旋转提示 | 竖屏显示提示并暂停；点「继续竖屏」恢复 |
+| 横屏标题 | 844×390 / 667×375 / 568×320 双栏布局，文字不重叠 |
+| 横屏航线图 | 触屏提示与统计按钮；站点标签区域可点选 |
+| 横屏 HUD | 按钮与燃料/ALT/VX/VY 间距约 14–17px |
+| 安全区 | HUD 左右内缩，横屏刘海不遮挡信息 |
+| 桌面回归 | 地图点击、十关软着陆仍通过 |
+| 测试数据清理 | 四键已删除，页面回标题 |
+
 ## 6. 需要人工测试
 
 - **真机触屏**：按钮可见性依赖 `@media (pointer:coarse)`；自动测试使用合成 `PointerEvent`，iPhone 真机仍需确认。
+- **iPhone 旋转提示**：竖屏提示与「继续竖屏」按钮依赖 iOS Safari 的 `orientation:portrait` 与 `pointer:coarse`；真机确认提示显示、暂停与恢复。
+- **iPhone 横屏标题/地图**：844×390 等尺寸已用 Canvas 截图核对；真机刘海安全区与 Safari 地址栏下的实际布局需确认。
 - **iPhone 系统菜单**：已加 `-webkit-touch-callout` / `user-select` / `contextmenu` / `selectstart` 抑制；需在真机长按按钮与页面确认不再出现复制/翻译条。
 - **皮肤观感**：三套皮肤已在桌面 Canvas 截图核对；真机小屏缩放下的辨识度建议人工确认。
 - **音频**：首次手势解锁、推力音、爆炸/着陆音、环境音、静音效果。
@@ -240,8 +262,19 @@ Pages hash : cf002d2ba86f0c98503f35d5e0aed5abbdd8ce58
 | 内容 | 手机竖屏地图、触控/HUD、系统菜单抑制、三套飞船皮肤 |
 | 状态 | 已推送、已上线；Pages 哈希已核对 |
 
+### Sprint 04 — 已上线
+
+| 项 | 内容 |
+|---|---|
+| commit | `0d99d8af86b88bef82ca270b0b1eb08a5211a385` |
+| 文件 | `vector-lander/index.html` + `README.md` |
+| 规模 | 2582 行 |
+| SHA1 | `9fab3e5ed88882a04a7b68b54465241ca9799c6a` |
+| 内容 | 竖屏旋转提示、横屏双栏标题、横屏地图/HUD、安全区 |
+| 状态 | 已推送、已上线；Pages 哈希已核对 |
+
 ## 8. 下一阶段建议（未批准）
 
 1. 若继续修缺陷，处理 P2-6（视觉）、P2-7/P2-8（预测精度）；这三项会改变可见行为，建议单独一批。
-2. 真机 iPhone 触控、长按菜单、皮肤观感与音频应优先人工验证。
+2. 真机 iPhone 旋转提示、横屏标题/地图、长按菜单、皮肤观感与音频应优先人工验证。
 3. 新玩法（Ocean Recovery / Tower Catch）必须等用户单独确认；不得把本报告建议当作批准。

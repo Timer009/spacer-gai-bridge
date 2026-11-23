@@ -2,6 +2,34 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 04 手机横屏布局（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：2582 行；SHA1 `9fab3e5ed88882a04a7b68b54465241ca9799c6a`。
+- `README.md`：手机端说明补充「建议横屏、竖屏提示旋转」。
+
+### Added / Fixed
+
+- 手机竖屏显示「请横屏游玩」提示；旋转中暂停，可「继续竖屏」。
+- 横屏标题改左右双栏，短屏文字不再重叠。
+- 横屏航线图使用触屏提示与统计按钮；站点标签区域可点选。
+- HUD 支持左右安全区，横屏触控按钮与燃料/ALT/VX/VY 保持间距。
+
+### Verification
+
+- 844×390 / 667×375 / 568×320 横屏标题截图核对，无文字互相覆盖。
+- 竖屏旋转提示显示/暂停/继续竖屏恢复逻辑通过。
+- 横屏地图标签点选、统计按钮、HUD 间距通过。
+- 桌面地图与十关软着陆回归通过；测试四键已清空。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`0d99d8af86b88bef82ca270b0b1eb08a5211a385`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `9fab3e5ed88882a04a7b68b54465241ca9799c6a`。
+
 ## 2026-11-24 — Spacer Sprint 03 手机端界面与飞船皮肤（已上线）
 
 ### Changed
