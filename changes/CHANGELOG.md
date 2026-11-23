@@ -2,6 +2,31 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 — Spacer Sprint 08 竖屏 HUD 与 D5 避让（已上线）
+
+### Changed
+
+- `vector-lander/index.html`：2732 行；SHA1 `226ae26e6e4c6c12b72cc632f30fb63916440eb4`。
+
+### Fixed
+
+- 竖屏燃料条缩为 132×8，HUD 上移量降到 92px。
+- `W<700` 时风标移到站名下方、ATM 移到右上，避免与站名重叠。
+- 关卡开场名称/提示字号按屏宽自适应，修复 D5「水手谷」长名称贴边。
+
+### Verification
+
+- 390×844 下风标/ATM/站名不重叠；燃料条与按钮间距 20px。
+- D5 开场名称左右留白充足；十关软着陆 10/10。
+- 无 `window.error`；测试四键已清空。
+
+详见 [reports/latest-test.md](../reports/latest-test.md)。
+
+### Commit status
+
+- 已推送到 Spacer `main`：`264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
+- GitHub Pages 已更新，线上文件 SHA1 核对为 `226ae26e6e4c6c12b72cc632f30fb63916440eb4`。
+
 ## 2026-11-24 — Spacer Sprint 07 安卓横屏画布与网格修复（已上线）
 
 ### Changed

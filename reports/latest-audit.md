@@ -2,7 +2,7 @@
 
 > **历史证据说明**：本报告是 2026-11-23 对基线 `526397a` 的只读审计，已从源码仓库的 `AUDIT-REPORT.txt` 迁移为 Markdown。技术内容保留；本地工作区绝对路径已脱敏。
 >
-> **当前状态提醒**：Sprint 01 已作为 `dd6ac72` 上线；Sprint 02 已作为 `4d20098` 上线；Sprint 03 已作为 `8cd40cd` 上线（手机端界面/地图/系统菜单抑制 + 三套飞船皮肤）；Sprint 04 已作为 `0d99d8a` 上线（手机横屏布局与旋转提示）；Sprint 05 已作为 `eab719d` 上线（自动横屏入口、旋转后 resize、长按菜单抑制）；Sprint 06 已作为 `e56797e` 上线（移除 iOS Fullscreen/Orientation Lock 崩溃风险）；Sprint 07 已作为 `69c959a` 上线（修复安卓横屏 Canvas 拉伸与 5×2 网格地图）。P0-1、P1-1、P2-1、P2-2、P2-3、P2-4 已随 Sprint 01 上线；P2-5、P2-9、P2-10、P2-13 已随 Sprint 02 上线。完整状态见 [PROJECT-STATUS.md](../PROJECT-STATUS.md) 与 [latest-test.md](latest-test.md)。
+> **当前状态提醒**：Sprint 01 已作为 `dd6ac72` 上线；Sprint 02 已作为 `4d20098` 上线；Sprint 03 已作为 `8cd40cd` 上线（手机端界面/地图/系统菜单抑制 + 三套飞船皮肤）；Sprint 04 已作为 `0d99d8a` 上线（手机横屏布局与旋转提示）；Sprint 05 已作为 `eab719d` 上线（自动横屏入口、旋转后 resize、长按菜单抑制）；Sprint 06 已作为 `e56797e` 上线（移除 iOS Fullscreen/Orientation Lock 崩溃风险）；Sprint 07 已作为 `69c959a` 上线（修复安卓横屏 Canvas 拉伸与 5×2 网格地图）；Sprint 08 已作为 `264194f` 上线（竖屏 HUD 瘦身、D5 风标/文案避让）。P0-1、P1-1、P2-1、P2-2、P2-3、P2-4 已随 Sprint 01 上线；P2-5、P2-9、P2-10、P2-13 已随 Sprint 02 上线。完整状态见 [PROJECT-STATUS.md](../PROJECT-STATUS.md) 与 [latest-test.md](latest-test.md)。
 >
 > 本报告中的行号均对应基线 `526397a` 的 2190 行版本，不保证对应最新工作区。
 
@@ -708,7 +708,7 @@ M。
 
 ---
 
-# 附录：Sprint 01–07 后状态
+# 附录：Sprint 01–08 后状态
 
 > 此附录不属于 2026-11-23 原始审计，由报告仓库维护者补充，便于后续 Agent 判断当前状态。
 >
@@ -719,6 +719,7 @@ M。
 > - Sprint 05：`eab719daf6f7360ca24eda82b3daa61695da5f07`，已推送、已上线（自动横屏入口、旋转后 resize、CSS/SVG 图标、长按菜单抑制）；审计问题集不变。
 > - Sprint 06：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`，已推送、已上线（移除 Fullscreen/Orientation Lock 与 backdrop-filter，防抖 resize）；审计问题集不变。
 > - Sprint 07：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`，已推送、已上线（Canvas 尺寸自愈、横屏 5×2 网格、HUD 上移、标题底板）；审计问题集不变。
+> - Sprint 08：`264194f6b1a40a2990c0d544d60c2b61e8b8bee1`，已推送、已上线（竖屏 HUD 瘦身、D5 风标/ATM 避让、开场字号自适应）；审计问题集不变。
 
 | 编号 | 基线状态 | Sprint 01 线上 `dd6ac72` | Sprint 02 线上 `4d20098` |
 |---|---|---|---|
@@ -751,6 +752,7 @@ M。
 | MOBILE-03 | 横屏入口只有「继续竖屏」；旋转后未 resize；按钮文字触发 iOS 长按菜单 | 已修复（自动横屏入口、orientationchange resize、CSS/SVG 图标、长按抑制） |
 | MOBILE-04 | iOS Safari 旋转时 Fullscreen/Orientation Lock 导致网页崩溃 | 已修复（移除两个 API 与按钮 backdrop-filter，改为手动横屏说明 + 防抖 resize） |
 | MOBILE-05 | 安卓横屏 Canvas 拉伸（圆变椭圆）、航线图文字拥挤、按钮压燃料条 | 已修复（CSS/像素尺寸同步 + 每帧自愈、5×2 网格地图、HUD 上移） |
+| MOBILE-06 | 竖屏燃料条占空间；D5 风标/站名/开场长名称拥挤 | 已修复（燃料条 132×8、风标/ATM 避让、开场字号自适应） |
 | SKIN-01 | 只有单一三角形飞船 | 已新增经典矢量 / 猎鹰 9 / 星舰三套皮肤与选择器 |
 
 当前完整状态与测试证据：

@@ -8,16 +8,16 @@
 | 字段 | 值 |
 |---|---|
 | 项目名称 | 矢量着陆 Vector Lander — 太阳系航线（仓库名 `Spacer`） |
-| 最后更新时间 | 2026-11-24 01:34 +08:00（Asia/Shanghai） |
+| 最后更新时间 | 2026-11-24 07:25 +08:00（Asia/Shanghai） |
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `main` |
-| 当前完整 Git commit SHA | `69c959abcd8d9084f0bd53f78f745b63f9884d4e` |
-| 远程 `origin/main` | `69c959abcd8d9084f0bd53f78f745b63f9884d4e` |
+| 当前完整 Git commit SHA | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
+| 远程 `origin/main` | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 01–06 + 安卓横屏画布/网格修复均已上线；无已批准的新开发任务 |
+| 当前开发阶段 | Sprint 01–08 均已上线；无已批准的新开发任务 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -27,18 +27,18 @@
 
 ```text
 branch       : main
-HEAD         : 69c959abcd8d9084f0bd53f78f745b63f9884d4e
-origin/main  : 69c959abcd8d9084f0bd53f78f745b63f9884d4e
+HEAD         : 264194f6b1a40a2990c0d544d60c2b61e8b8bee1
+origin/main  : 264194f6b1a40a2990c0d544d60c2b61e8b8bee1
 worktree     : clean
 file         : vector-lander/index.html
-lines        : 2709
-SHA1         : 51b734839acc87045190c0614df52cac67d20877
+lines        : 2732
+SHA1         : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 ```
 
 线上 Pages 当前对应的游戏文件：
 
 ```text
-Pages hash : 51b734839acc87045190c0614df52cac67d20877
+Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 状态       : 已通过 Pages 页面哈希核对（2026-11-24）
 ```
 
@@ -50,8 +50,9 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 - **Sprint 04（手机横屏布局）**：`0d99d8af86b88bef82ca270b0b1eb08a5211a385`，已上线。
 - **Sprint 05（横屏入口 + 长按菜单修复）**：`eab719daf6f7360ca24eda82b3daa61695da5f07`，已上线。
 - **Sprint 06（iOS 旋转崩溃热修）**：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`，已上线。
-- **Sprint 07（安卓横屏画布/网格修复）**：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`，已推送、Pages 已核对。
-- 当前线上与本地 `main` 一致，均为 Sprint 07。
+- **Sprint 07（安卓横屏画布/网格修复）**：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`，已上线。
+- **Sprint 08（竖屏 HUD 瘦身 + D5 避让）**：`264194f6b1a40a2990c0d544d60c2b61e8b8bee1`，已推送、Pages 已核对。
+- 当前线上与本地 `main` 一致，均为 Sprint 08。
 
 ## 3. 任务状态
 
@@ -98,6 +99,10 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
   - 手机横屏航线图改 5×2 网格，修复标题/站点/星级拥挤
   - HUD 上移条件加入 `maxTouchPoints`，安卓横屏按钮不再压住燃料条
   - 横屏标题右栏增加暗色底板
+- Sprint 08（`264194f`，已上线）：
+  - 竖屏燃料条缩为 132×8，HUD 上移量降到 92px
+  - `W<700` 时风标移到站名下方，ATM 移到右上
+  - 关卡开场名称/提示字号按屏宽自适应，修复 D5 长名称贴边
 
 ### 进行中
 
@@ -106,7 +111,7 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 
 ### 当前任务边界
 
-- 当前线上包含 Sprint 01–07。
+- 当前线上包含 Sprint 01–08。
 - 报告中的“下一阶段建议”不是已批准任务。
 
 ## 4. 问题统计
@@ -115,17 +120,17 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 
 - “审计条目”按 `reports/latest-audit.md` 的 P0/P1/P2 编号。
 - P2 共 13 条，其中 P2-11 经复核不成立，P2-12 为信息性/既定取舍；可执行条目为 11 条。
-- 当前线上 `69c959a` 包含 Sprint 01–07。
-- Sprint 03–07 是手机端与皮肤/横屏功能，不新增审计条目，也不改变下列审计问题统计。
+- 当前线上 `264194f` 包含 Sprint 01–08。
+- Sprint 03–08 是手机端与皮肤/横屏功能，不新增审计条目，也不改变下列审计问题统计。
 
-| 严重度 | 可执行条目 | 当前线上 `69c959a` 仍开放 |
+| 严重度 | 可执行条目 | 当前线上 `264194f` 仍开放 |
 |---|---:|---:|
 | P0 | 1 | 0 |
 | P1 | 2 | 1 |
 | P2 | 11 | 3 |
 | **合计** | **14** | **4** |
 
-> 对比：Sprint 01 刚上线时仍有 8 项开放；Sprint 02 上线后降至 4 项；Sprint 03–07 不改变该数量。
+> 对比：Sprint 01 刚上线时仍有 8 项开放；Sprint 02 上线后降至 4 项；Sprint 03–08 不改变该数量。
 
 ### 已修复
 
@@ -150,6 +155,7 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 | Sprint 05 | MOBILE-03 | 横屏入口缺失、旋转后未 resize、iOS 长按按钮弹系统菜单（审计外新增） |
 | Sprint 06 | MOBILE-04 | iOS Safari 旋转时调用 Fullscreen/Orientation Lock 导致网页崩溃（审计外新增） |
 | Sprint 07 | MOBILE-05 | 安卓横屏 Canvas 被拉伸（圆变椭圆）、航线图文字拥挤、按钮压燃料条（审计外新增） |
+| Sprint 08 | MOBILE-06 | 竖屏燃料条占空间；D5 风标/站名/开场长名称拥挤（审计外新增） |
 
 ### 仍开放的问题
 
@@ -174,6 +180,7 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 - P2-6/P2-7/P2-8 的视觉/预测差异仍在。
 - 手机端与皮肤目前用合成触控/桌面视口验证；iPhone 真机长按菜单、`pointer:coarse` 按钮显示、旋转提示、音频仍需人工确认。
 - 安卓横屏已修 Canvas CSS/像素尺寸同步与 5×2 网格；真机 Chrome 下的圆度、文字间距与按钮间距需人工确认。
+- 竖屏燃料条已缩为 132×8；D5 风标/ATM 已避开站名，开场名称字号已自适应；真机仍建议确认字距。
 - iPhone 控制中心若开启「竖屏锁定」，网页无法强制横屏；游戏只提示关闭锁定后手动旋转，不再调用 Fullscreen/Orientation Lock。
 - 横屏标题右栏已加暗色底板；如真机上仍觉得背景干扰可继续调不透明度。
 - 皮肤碰撞点从 7 点加密到 16 点（猎鹰 9 / 星舰），包络仍为机头 −14、底部 +9；极端接触判定可能比旧 7 点更精确。
@@ -276,10 +283,22 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 | 十关回归 | ✅ 10/10 |
 | 测试数据清理 | ✅ 四键已删除 |
 
+### Sprint 08（已上线 `264194f`）
+
+| 项目 | 结果 |
+|---|---|
+| 竖屏燃料条 | ✅ 132×8，HUD 上移 92px |
+| D5 风标/ATM | ✅ 风标移到站名下方，ATM 移到右上，不重叠 |
+| D5 开场长名称 | ✅ 字号自适应，390×844 不贴边 |
+| HUD/按钮间距 | ✅ 竖屏仍保持安全间距 |
+| 十关回归 | ✅ 10/10 |
+| 测试数据清理 | ✅ 四键已删除 |
+
 ## 6. 需要人工测试
 
 - **真机触屏**：按钮可见性依赖 `@media (pointer:coarse)`；自动测试使用合成 `PointerEvent`，iPhone/Android 真机仍需确认。
 - **安卓横屏圆度/间距**：640×360、844×390 已用 Canvas 截图与比例检查；真机 Chrome 的 DPR、地址栏与刘海安全区需确认。
+- **D5/竖屏 HUD**：390×844 已核对风标/ATM/燃料条/开场名称；真机小屏字号与字距需确认。
 - **iPhone 旋转提示**：竖屏提示依赖 iOS Safari 的 `orientation:portrait` 与 `pointer:coarse`；自动 Fullscreen/Orientation Lock 已移除，改为手动旋转说明。
 - **iPhone 旋转崩溃**：已移除 `requestFullscreen` / `screen.orientation.lock` 与按钮 `backdrop-filter`；真机旋转后是否仍崩溃需重点确认。
 - **iPhone 竖屏锁定**：若系统开启竖屏锁定，网页无法强制横屏；需人工关闭锁定后旋转。
@@ -370,8 +389,19 @@ Pages hash : 51b734839acc87045190c0614df52cac67d20877
 | 内容 | Canvas 尺寸自愈、横屏 5×2 网格地图、HUD 上移、标题底板 |
 | 状态 | 已推送、已上线；Pages 哈希已核对 |
 
+### Sprint 08 — 已上线
+
+| 项 | 内容 |
+|---|---|
+| commit | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
+| 文件 | `vector-lander/index.html` |
+| 规模 | 2732 行 |
+| SHA1 | `226ae26e6e4c6c12b72cc632f30fb63916440eb4` |
+| 内容 | 竖屏 HUD 瘦身、D5 风标/ATM 避让、开场字号自适应 |
+| 状态 | 已推送、已上线；Pages 哈希已核对 |
+
 ## 8. 下一阶段建议（未批准）
 
 1. 若继续修缺陷，处理 P2-6（视觉）、P2-7/P2-8（预测精度）；这三项会改变可见行为，建议单独一批。
-2. 真机 iPhone 旋转/竖屏锁定、安卓横屏圆度/间距、长按菜单、皮肤观感与音频应优先人工验证。
+2. 真机 iPhone 旋转/竖屏锁定、安卓横屏圆度/间距、D5/竖屏 HUD、长按菜单、皮肤观感与音频应优先人工验证。
 3. 新玩法（Ocean Recovery / Tower Catch）必须等用户单独确认；不得把本报告建议当作批准。
