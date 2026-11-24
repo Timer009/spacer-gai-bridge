@@ -1,6 +1,6 @@
 # Spacer 2.0 路线图
 
-Sprint 11 已验收并归档。Sprint 12 已在独立分支交付，等待用户试玩。
+Sprint 11 已验收并归档。Sprint 12 已归档，Sprint 13 获准独立开发。
 
 | Sprint | 范围 |
 |---|---|

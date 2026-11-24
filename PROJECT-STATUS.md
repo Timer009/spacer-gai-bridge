@@ -1,11 +1,14 @@
 # PROJECT STATUS — Spacer / 矢量着陆
 
+Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint-12 标签指向 `3ef190dc18f8a4f918ebede83ea9b895eca4b843`。Pages 回读的 Git blob 为 `113be2c17753f89bfacbcb9871ace6f0282f879b`，与发布文件一致。
+
+
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
 ## 当前开发 · Sprint 12
 
-Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，等待用户验收。 [测试与审计](reports/sprint-12/sea-recovery.md) · [手机预览](https://rawcdn.githack.com/Timer009/Spacer/3ef190dc18f8a4f918ebede83ea9b895eca4b843/vector-lander/index.html)
+Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，用户已验收。 [测试与审计](reports/sprint-12/sea-recovery.md) · [手机预览](https://rawcdn.githack.com/Timer009/Spacer/3ef190dc18f8a4f918ebede83ea9b895eca4b843/vector-lander/index.html)
 
 ## 正式发布 · Sprint 11
 
@@ -33,10 +36,10 @@ Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，等待用�
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `sprint-12-falcon9-sea-recovery` |
 | 当前完整 Git commit SHA | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
-| 远程 `origin/main` | `3a8bea3d066f12c874ed5dbf50619d051abeb294` |
+| 远程 `origin/main` | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 11 正式发布，Sprint 12 独立分支待验收 |
+| 当前开发阶段 | Sprint 12 正式发布，Sprint 13 获准开发 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -47,7 +50,7 @@ Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，等待用�
 ```text
 branch       : sprint-12-falcon9-sea-recovery
 HEAD         : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
-origin/main  : 3a8bea3d066f12c874ed5dbf50619d051abeb294
+origin/main  : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
 file         : vector-lander/index.html
 lines        : 3562
 SHA256       : 577d8b6a324d27c32245cb9fe3d0e5b4a3d7b8e8a49efa51de596762180da2e7

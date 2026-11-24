@@ -1,9 +1,5 @@
-# SPACER-SPRINT-12 · Falcon 9 海上回收
+# 当前任务
 
-Sprint 11 已验收、回归并合入 main，标签为 `sprint-11`。Sprint 12 在独立分支交付，等待用户真机试玩。
+Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint-12 标签指向 `3ef190dc18f8a4f918ebede83ea9b895eca4b843`。Pages 回读的 Git blob 为 `113be2c17753f89bfacbcb9871ace6f0282f879b`，与发布文件一致。
 
-- 从回收挑战目录选择 Falcon 9。观察相对速度和倾角，尝试成功着陆、落水以及失败后的重试。
-- 手机上检查兼容横屏的设置滚动、触控、暂停与恢复。在太阳系战役检查月面着陆器轮廓和平台倍率的视线。
-- 塔架捕获入口保留“即将开放”。Sprint 14 的写实视觉方向已列入路线图。两端夸克原生横屏继续暂缓。
-
-[实现、回归及验收记录](../reports/sprint-12/sea-recovery.md) · [路线图](../ROADMAP.md)
+下一阶段为 Super Heavy 上部挂点双臂捕获。
