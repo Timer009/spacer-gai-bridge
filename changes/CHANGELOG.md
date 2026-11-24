@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 15 rc.2a 已获阶段验收，rc.2b 镜头专项已提交。 [候选记录](../reports/sprint-15/rc2b-camera.md)
+
+
 Sprint 15 rc.2a 修正 A01–A04。 [核心判定专项](../reports/sprint-15/rc2a-adjudication.md)
 
 
