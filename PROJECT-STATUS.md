@@ -3,6 +3,11 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
+## 当前开发 · Sprint 10
+
+- `sprint-10-vehicle-physics` 测试版为 `5536ffcfeb7428497e20614474c9556fbd0ab550`。经典矢量、猎鹰 9 与星舰拥有各自的飞行模型。旧设置的型号选择保留，下次起飞、重置或重生生效。 [技术说明与测试](reports/sprint-10/vehicle-physics.md)
+- Sprint 10 等待用户验收，正式 Pages 已回读核对为 Sprint 09。 [开发预览](https://rawcdn.githack.com/Timer009/Spacer/5536ffcfeb7428497e20614474c9556fbd0ab550/vector-lander/index.html)
+
 ## 发布基线 · Sprint 09
 
 - 发布版本为 `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42`，归档标签为 `sprint-09`。移动布局、HUD、旋转、兼容横屏、冰筏与轨迹预测的验收记录见 [发布归档](reports/sprint-09/release.md)。
@@ -112,8 +117,8 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 09 等待 iOS、Android 夸克的原生诊断与兼容横屏复验，以及正式发布批准。Android Firefox 暂无真机反馈。
-- Sprint 10–16 等待各阶段批准。
+- Sprint 10 各型号实飞手感待用户验收。
+- 已知夸克 P1-4 暂缓。Sprint 11–16 等待各阶段批准。
 
 ### 当前任务边界
 
@@ -170,7 +175,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 |---|---|---|
 | P1-2 | 仓库本地 `http.proxy` 配置 | 环境项。配置仍为 `http://127.0.0.1:10808`；当前端口可用。Sprint 01/02/03 推送均已验证。 |
 | P1-3 | iPhone Safari 旋转后曾保持竖屏 | 用户最新真机反馈 iOS Safari 横屏正常。 |
-| P1-4 | iOS 和 Android 夸克仍无法正常横屏 | 阻塞 Sprint 09 正式验收。自动横屏根因待成对诊断记录。兼容模式可直接进入，仍待两端真机验收。 |
+| P1-4 | iOS 和 Android 夸克仍无法正常横屏 | 用户批准暂缓。自动横屏根因仍待真机诊断，兼容模式可直接进入。 |
 | P2-6 | 漂移平台削平地形留下“无平台平地” | 已确认是视觉问题；`amp < w/2`，冰筏不会漂出削平段。未修改。 |
 | P2-7 | 预测线不模拟旋转，忽略岩柱/陨石/间歇泉 | 已确认；预测用中心点，真实碰撞用船体点。未修改。 |
 | P2-8 | 预测视距固定 4 秒 | 高空低重力时可能到不了地面，无撞击标记。未修改。 |

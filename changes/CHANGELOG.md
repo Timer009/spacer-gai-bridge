@@ -2,6 +2,11 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 · Spacer Sprint 10 三型飞船物理
+
+- `5536ffc` 增加各型号的质量、推力、油量、耗油、转向响应和接触几何。经典矢量保持 Sprint 09 数值与飞行路径。
+- 型号在重新生成飞船时生效，实际飞行与预测共享控制步。保留旧型号选项、进度和统计数据。 [测试与实现](../reports/sprint-10/vehicle-physics.md)
+
 ## 2026-11-24 · Sprint 09 正式归档
 
 - `fbc8e0f` 作为 `sprint-09` 版本纳入 `main`。用户确认五组手机真机横屏通过，两端夸克的问题按已知兼容性缺陷暂缓。 [发布归档](../reports/sprint-09/release.md)

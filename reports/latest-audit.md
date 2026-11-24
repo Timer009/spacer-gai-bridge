@@ -1,5 +1,7 @@
 # Spacer 项目只读审计报告（基线 `526397a`）
 
+Sprint 10 新增统一的型号定义和飞行控制。型号状态按飞船实例保存，实际飞行、预测与碰撞读取同一型号。基线比对、手感待验收项与后续扩展边界见专项记录。 [Sprint 10 审计](sprint-10/vehicle-physics.md)
+
 > **历史证据说明**：本报告是 2026-11-23 对基线 `526397a` 的只读审计，已从源码仓库的 `AUDIT-REPORT.txt` 迁移为 Markdown。技术内容保留；本地工作区绝对路径已脱敏。
 >
 > **当前状态提醒**：Sprint 01 已作为 `dd6ac72` 上线；Sprint 02 已作为 `4d20098` 上线；Sprint 03 已作为 `8cd40cd` 上线（手机端界面/地图/系统菜单抑制 + 三套飞船皮肤）；Sprint 04 已作为 `0d99d8a` 上线（手机横屏布局与旋转提示）；Sprint 05 已作为 `eab719d` 上线（自动横屏入口、旋转后 resize、长按菜单抑制）；Sprint 06 已作为 `e56797e` 上线（移除 iOS Fullscreen/Orientation Lock 崩溃风险）；Sprint 07 已作为 `69c959a` 上线（修复安卓横屏 Canvas 拉伸与 5×2 网格地图）；Sprint 08 已作为 `264194f` 上线（竖屏 HUD 瘦身、D5 风标/文案避让）。P0-1、P1-1、P2-1、P2-2、P2-3、P2-4 已随 Sprint 01 上线；P2-5、P2-9、P2-10、P2-13 已随 Sprint 02 上线。完整状态见 [PROJECT-STATUS.md](../PROJECT-STATUS.md) 与 [latest-test.md](latest-test.md)。
