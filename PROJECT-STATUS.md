@@ -3,10 +3,10 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
-## 当前开发 · Sprint 10
+## 正式发布 · Sprint 10
 
-- `sprint-10-vehicle-physics` 测试版为 `5536ffcfeb7428497e20614474c9556fbd0ab550`。经典矢量、猎鹰 9 与星舰拥有各自的飞行模型。旧设置的型号选择保留，下次起飞、重置或重生生效。 [技术说明与测试](reports/sprint-10/vehicle-physics.md)
-- Sprint 10 等待用户验收，正式 Pages 已回读核对为 Sprint 09。 [开发预览](https://rawcdn.githack.com/Timer009/Spacer/5536ffcfeb7428497e20614474c9556fbd0ab550/vector-lander/index.html)
+- 用户试玩后批准归档。Sprint 10 为 `5536ffcfeb7428497e20614474c9556fbd0ab550`，标签 `sprint-10`。三种独立飞行型号和旧存档兼容性均已回归。 [发布归档](reports/sprint-10/release.md)
+- Sprint 11 获批在独立分支开发。夸克横屏 P1-4 继续暂缓。 [当前任务](tasks/CURRENT-TASK.md)
 
 ## 发布基线 · Sprint 09
 
@@ -24,11 +24,11 @@
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `main` |
-| 当前完整 Git commit SHA | `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42` |
-| 远程 `origin/main` | `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42` |
+| 当前完整 Git commit SHA | `5536ffcfeb7428497e20614474c9556fbd0ab550` |
+| 远程 `origin/main` | `5536ffcfeb7428497e20614474c9556fbd0ab550` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 09 已验收归档；Sprint 10 独立开发 |
+| 当前开发阶段 | Sprint 10 已验收归档，Sprint 11 独立开发 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -38,12 +38,12 @@
 
 ```text
 branch       : main
-HEAD         : fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42
-origin/main  : fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42
+HEAD         : 5536ffcfeb7428497e20614474c9556fbd0ab550
+origin/main  : 5536ffcfeb7428497e20614474c9556fbd0ab550
 worktree     : clean
 file         : vector-lander/index.html
-lines        : 3169
-SHA1         : e39de1ae46039f6348f95bf569efd9aaf44a22d6
+lines        : 3204
+SHA1         : ea5bb0b02c3a349e40df39862da65420d78a6620
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
@@ -117,8 +117,8 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 10 各型号实飞手感待用户验收。
-- 已知夸克 P1-4 暂缓。Sprint 11–16 等待各阶段批准。
+- Sprint 11 在独立开发分支交付。
+- 已知夸克 P1-4 暂缓。Sprint 12–16 等待各阶段批准。
 
 ### 当前任务边界
 

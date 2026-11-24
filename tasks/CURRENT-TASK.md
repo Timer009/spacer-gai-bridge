@@ -10,4 +10,4 @@
 - 保留十关、经典矢量行为、既有存档及移动端成果。实际飞行与预测共用操纵积分和接触几何。
 - 回归、性能及版本证据见 [Sprint 10 专项报告](../reports/sprint-10/vehicle-physics.md)。
 
-Sprint 10 独立分支等待用户验收和合入批准。Sprint 11–16 按既定顺序等待对应授权。 [路线图](../ROADMAP.md)
+用户试玩后批准 Sprint 10 合入 `main` 并归档，同时批准开展 Sprint 11。Sprint 12–16 按既定顺序等待对应授权。 [发布归档](../reports/sprint-10/release.md) · [路线图](../ROADMAP.md)
