@@ -14,7 +14,7 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 
 ## 当前开发 · Sprint 15
 
-`v2.0.15-rc.1` 等待真机验收，Spacer `b9c872526e7b4e23e639ddee407a51d933d1a632`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/b9c872526e7b4e23e639ddee407a51d933d1a632/vector-lander/index.html) · [性能与回归](reports/sprint-15/optimization.md)
+`v2.0.15-rc.2a` 等待验收，Spacer `265c40e0166ae7a7643f46f1da2086841aa7056f`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/265c40e0166ae7a7643f46f1da2086841aa7056f/vector-lander/index.html) · [核心判定专项](reports/sprint-15/rc2a-adjudication.md)
 
 ## 正式发布 · Sprint 14
 
@@ -53,7 +53,7 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `sprint-15-optimization` |
-| 当前完整 Git commit SHA | `b9c872526e7b4e23e639ddee407a51d933d1a632` |
+| 当前完整 Git commit SHA | `265c40e0166ae7a7643f46f1da2086841aa7056f` |
 | 远程 `origin/main` | `951d13b58e4800d0f9afa57bf362d2b15a186aac` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
@@ -67,11 +67,11 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 
 ```text
 branch       : sprint-15-optimization
-HEAD         : b9c872526e7b4e23e639ddee407a51d933d1a632
+HEAD         : 265c40e0166ae7a7643f46f1da2086841aa7056f
 origin/main  : 951d13b58e4800d0f9afa57bf362d2b15a186aac
 file         : vector-lander/index.html
-lines        : 3911
-SHA256       : edd0a3bc987ec3f9a5c335c0d0efebfddc10699392623ea98372402f178887d0
+lines        : 4026
+SHA256       : 6417766697d6f73def612e7ea56dc53f238454b266b613884fadfd66ec6d8509
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。

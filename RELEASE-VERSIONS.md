@@ -13,5 +13,6 @@
 | v2.0.14-rc.1 | 2.0.14.1 | 2026-11-24T13:37:47Z | 候选预览 | `bddbd34bc96174bec293db9a2e497d00bcea130c` | [固定版](https://rawcdn.githack.com/Timer009/Spacer/bddbd34bc96174bec293db9a2e497d00bcea130c/vector-lander/index.html) |
 | v2.0.14 | 2.0.14.2 | 2026-11-24T14:03:32Z | 正式发布 | `951d13b58e4800d0f9afa57bf362d2b15a186aac` | [Pages](https://timer009.github.io/Spacer/vector-lander/) |
 | v2.0.15-rc.1 | 2.0.15.1 | 2026-11-24T14:07:09Z | 候选预览 | `b9c872526e7b4e23e639ddee407a51d933d1a632` | [固定版](https://rawcdn.githack.com/Timer009/Spacer/b9c872526e7b4e23e639ddee407a51d933d1a632/vector-lander/index.html) |
+| v2.0.15-rc.2a | 2.0.15.2a | 2026-11-24T15:57:33Z | 候选预览 | `265c40e0166ae7a7643f46f1da2086841aa7056f` | [固定版](https://rawcdn.githack.com/Timer009/Spacer/265c40e0166ae7a7643f46f1da2086841aa7056f/vector-lander/index.html) |
 
 rc.5 接续此前四次 Sprint 13 候选交付，是首个在页面显示构建身份的版本。上一横屏候选 `8817c4822e4dba98a9807ed632a5e00ba6dd2bb9` 使用旧页面模板。

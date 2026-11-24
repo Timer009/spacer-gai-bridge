@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 15 rc.2a 修正 A01–A04。 [核心判定专项](../reports/sprint-15/rc2a-adjudication.md)
+
+
 Sprint 15 候选 v2.0.15-rc.1，等待真机验收。 [测试和性能](../reports/sprint-15/optimization.md)
 
 
