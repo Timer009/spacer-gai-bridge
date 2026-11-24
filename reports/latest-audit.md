@@ -1,5 +1,8 @@
 # Spacer 项目只读审计报告（基线 `526397a`）
 
+塔架捕获已获用户试玩反馈。平台得分标识与海上吃水两项收尾修正现待最终验收。 [收尾记录与浪相截图](../reports/sprint-13/closeout.md)
+
+
 Sprint 13 在独立分支交付 Super Heavy 上部挂点捕获，等待用户验收。 [实现、测试与截图](../reports/sprint-13/tower-catch.md)
 
 

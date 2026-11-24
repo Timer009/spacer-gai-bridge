@@ -1,5 +1,8 @@
 # Sprint 13 · Super Heavy 双臂捕获
 
+最新试玩版本与两项收尾修正见[最终验收候选](closeout.md)。下文为初次交付记录。
+
+
 源提交 `b7a3a758e3b80d8715645ad439147cad3c5ad39e`。打开「回收挑战 → 塔架机械臂捕获」。[固定版本试玩](https://rawcdn.githack.com/Timer009/Spacer/b7a3a758e3b80d8715645ad439147cad3c5ad39e/vector-lander/index.html)
 
 ## 场景与判定
