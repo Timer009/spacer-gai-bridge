@@ -1,5 +1,8 @@
 # Sprint 13 最终验收候选
 
+最新试玩见[二次收尾](second-closeout.md)。以下记录对应上一候选版。
+
+
 用户已试玩塔架捕获。本次收尾提交为 `c6f3027e04798deef0124ee3f4c70af6e818bbfa`，继续在 `sprint-13-tower-catch` 等待最终验收。[固定版本试玩](https://rawcdn.githack.com/Timer009/Spacer/c6f3027e04798deef0124ee3f4c70af6e818bbfa/vector-lander/index.html)
 
 ## 平台计分
