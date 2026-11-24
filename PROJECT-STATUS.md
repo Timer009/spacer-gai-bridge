@@ -9,11 +9,10 @@
 - Spacer 测试分支修复版为 `b97c0c5710837251a396b0db9416fa229cf85049`。保留 Sprint 09 云端提交和交接历史。 [Hotfix 01 报告](reports/sprint-09/hotfix-01.md) · [独立手机预览](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/index.html)
 
 - 用户已批准 Sprint 09，Codex 接管，Z Code 暂停参与。见 [当前任务](tasks/CURRENT-TASK.md)。
-- Spacer 开发分支为 `sprint-09-mobile-quality`，当前验证版为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
+- Spacer 开发分支为 `sprint-09-mobile-quality`，Hotfix 01 的原始 Sprint 09 基线为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
 - 分支完成移动布局、图标、热区、暂停、旋转及 P2-6／P2-7／P2-8。P2-6 在保留现有地形碰撞的前提下标记冰槽。预测独立提交 `0eb19c8`。
 - 双引擎模拟矩阵及辅助着陆回归通过，真机验收和上线批准待完成。见 [最新测试](reports/latest-test.md) 和 [审计](reports/latest-audit.md)。
-- Windows 本机已校验并导入两个增量包，随后发布两条 Sprint 09 分支。Spacer 分支指向 `a10a463`。Bridge 首次发布回读为原始交接提交 `e94dbeb`，本次文档更新是其后续提交。两个 `main` 均已回读核对。见 [Windows 交接记录](reports/sprint-09/windows-handoff.md)。
-- Windows Chrome 四组手机视口复测通过。独立预览固定到 Spacer 的云端提交，待 iPhone 和 Android 真机验收。[Sprint 09 手机预览](https://rawcdn.githack.com/Timer009/Spacer/a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950/vector-lander/index.html)
+- Windows 本机导入两个增量包时，Spacer 和 Bridge 首次回读的原始交接提交分别为 `a10a463` 与 `e94dbeb`。两个测试分支已在此基础上快进至 Hotfix 01。 [Windows 交接记录](reports/sprint-09/windows-handoff.md)
 - 下列 Sprint 08 快照记录已发布版本。Sprint 10–16 见 [路线图](ROADMAP.md)。
 
 ## 1. 基本信息
@@ -134,6 +133,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 - “审计条目”按 `reports/latest-audit.md` 的 P0/P1/P2 编号。
 - P2 共 13 条，其中 P2-11 经复核不成立，P2-12 为信息性/既定取舍；可执行条目为 11 条。
 - 当前线上 `264194f` 包含 Sprint 01–08。
+- P1-3 属于 Sprint 09 测试分支，以下历史审计统计沿用 Sprint 08 线上口径。
 - Sprint 03–08 是手机端与皮肤/横屏功能，不新增审计条目，也不改变下列审计问题统计。
 
 | 严重度 | 可执行条目 | 当前线上 `264194f` 仍开放 |

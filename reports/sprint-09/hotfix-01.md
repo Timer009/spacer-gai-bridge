@@ -49,4 +49,6 @@ Windows Chrome 158.0.8127.36 与 Playwright WebKit 26.5 分别执行七组动态
 
 [正常游戏](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/index.html) · [诊断模式](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/index.html?debug=1) · [最小方向检查](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/orientation-check.html)
 
+使用本机 Chrome 通过确认页访问了三个链接。三者均为 HTTP 200、顶层无 iframe，响应字节的 SHA256 与固定 Git 提交一致。确认了正常预览关闭诊断、诊断预览正确显示完整提交，及最小检查页响应模拟横屏。正式 Pages 实际响应字节仍与 Sprint 08 的 `264194f` 一致。
+
 发布范围为 `sprint-09-mobile-quality`。正式版沿用 Sprint 08。Sprint 10–16 沿用原路线图，等待相应批准。
