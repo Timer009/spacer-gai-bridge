@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 13 已归档。触控及结算防误触的真机确认仍待补齐。
+
+
 当前验收版本为 `v2.0.13-rc.6`。 [镜头、目标及触控回归](../reports/sprint-13/rc6-camera-input.md)
 
 

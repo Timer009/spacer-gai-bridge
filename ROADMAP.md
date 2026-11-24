@@ -1,5 +1,8 @@
 # Spacer 2.0 路线图
 
+Sprint 13 已归档。触控及结算防误触的真机确认仍待补齐。
+
+
 Sprint 11 已验收并归档。Sprint 12 已归档，Sprint 13 在独立分支等待验收。
 
 | Sprint | 范围 |
