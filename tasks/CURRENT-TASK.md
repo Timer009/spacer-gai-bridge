@@ -1,5 +1,8 @@
 # SPACER-SPRINT-13 · 塔架捕获
 
+当前验收版本为 `v2.0.13-rc.6`。 [镜头、目标及触控回归](../reports/sprint-13/rc6-camera-input.md)
+
+
 当前验收版本为 `v2.0.13-rc.5`。 [版本与横屏复核](../reports/sprint-13/version-rc5.md)
 
 

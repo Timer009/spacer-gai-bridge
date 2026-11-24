@@ -1,0 +1,16 @@
+portrait hold 75ms released, gap=20
+portrait rapid taps, dual touch, slide out and cancel PASS
+native hold 75ms released, gap=20
+native hold 1000ms released, gap=20
+native hold 3000ms released, gap=20
+native hold 10000ms released, gap=20
+native rapid taps, dual touch, slide out and cancel PASS
+compat hold 75ms released, gap=20
+compat rapid taps, dual touch, slide out and cancel PASS
+
+portrait blur release PASS
+portrait visibilitychange release PASS
+native blur release PASS
+native visibilitychange release PASS
+compat blur release PASS
+compat visibilitychange release PASS

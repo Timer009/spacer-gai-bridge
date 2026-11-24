@@ -1,5 +1,8 @@
 # Spacer 项目只读审计报告（基线 `526397a`）
 
+当前验收版本为 `v2.0.13-rc.6`。 [镜头、目标及触控回归](../reports/sprint-13/rc6-camera-input.md)
+
+
 横屏结算候选已更新，等待用户真机复验。 [横屏测试与对比](../reports/sprint-13/landscape-results.md)
 
 
