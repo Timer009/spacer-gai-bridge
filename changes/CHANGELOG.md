@@ -2,6 +2,12 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 · Spacer Sprint 09 Hotfix 02
+
+- 以实测游戏容器尺寸布局，增加 ResizeObserver，保留 Hotfix 01 的窗口、可见视口和方向事件路径。
+- 支持自动、竖屏、手动兼容横屏及用户主动请求原生全屏。适配容器旋转后的 Canvas、触控、菜单和安全区。
+- 诊断补充容器、逻辑尺寸、全屏策略与方向请求结果。夸克 P1-4 等待真机复验。 [专项报告](../reports/sprint-09/hotfix-02.md)
+
 ## 2026-11-24 · Spacer Sprint 09 Hotfix 01
 
 - `36af9ac` 将可见视口、Canvas、HUD 和 DOM 控件同步到同一套尺寸，兼容方向事件缺失或先于几何变化到达的情况。

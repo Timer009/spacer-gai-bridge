@@ -5,8 +5,9 @@
 
 ## 当前开发状态 · Sprint 09
 
-- **正式验收暂停。** iPhone 真机反馈浏览器内旋转后仍为竖屏，已登记 P1-3。Hotfix 01 已完成动态模拟验证，等待 iPhone Safari 独立标签页复测。
-- Spacer 测试分支修复版为 `b97c0c5710837251a396b0db9416fa229cf85049`。保留 Sprint 09 云端提交和交接历史。 [Hotfix 01 报告](reports/sprint-09/hotfix-01.md) · [独立手机预览](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/index.html)
+- **正式验收暂停。** 用户反馈 Hotfix 01 后 iOS Safari 可横屏，iOS 和 Android 夸克仍异常。已登记 P1-4，Hotfix 02 处理浏览器不改变容器尺寸时的可选横屏。 [Hotfix 02 专项报告](reports/sprint-09/hotfix-02.md)
+- 当前测试版为 `319d54ac4256d50cc1fa931fe133c265c89f5315`，覆盖自动、竖屏、兼容横屏及用户主动的原生全屏方向请求。 [独立手机预览](https://rawcdn.githack.com/Timer009/Spacer/319d54ac4256d50cc1fa931fe133c265c89f5315/vector-lander/index.html)
+- Hotfix 01 验证版为 `b97c0c5710837251a396b0db9416fa229cf85049`，保留在测试分支历史。 [Hotfix 01 报告](reports/sprint-09/hotfix-01.md)
 
 - 用户已批准 Sprint 09，Codex 接管，Z Code 暂停参与。见 [当前任务](tasks/CURRENT-TASK.md)。
 - Spacer 开发分支为 `sprint-09-mobile-quality`，Hotfix 01 的原始 Sprint 09 基线为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
@@ -118,7 +119,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 09 继续等待 iPhone 横屏 P1-3 复验及正式发布批准。Hotfix 01 的 Chromium 与 WebKit 动态结果见专项报告。
+- Sprint 09 等待 Hotfix 02 的夸克两端及其他手机浏览器复验和正式发布批准。
 - Sprint 10–16 等待各阶段批准。
 
 ### 当前任务边界
@@ -133,7 +134,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 - “审计条目”按 `reports/latest-audit.md` 的 P0/P1/P2 编号。
 - P2 共 13 条，其中 P2-11 经复核不成立，P2-12 为信息性/既定取舍；可执行条目为 11 条。
 - 当前线上 `264194f` 包含 Sprint 01–08。
-- P1-3 属于 Sprint 09 测试分支，以下历史审计统计沿用 Sprint 08 线上口径。
+- P1-3 与 P1-4 属于 Sprint 09 测试分支，以下历史审计统计沿用 Sprint 08 线上口径。
 - Sprint 03–08 是手机端与皮肤/横屏功能，不新增审计条目，也不改变下列审计问题统计。
 
 | 严重度 | 可执行条目 | 当前线上 `264194f` 仍开放 |
@@ -175,7 +176,8 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 | 编号 | 问题 | 状态 / 说明 |
 |---|---|---|
 | P1-2 | 仓库本地 `http.proxy` 配置 | 环境项。配置仍为 `http://127.0.0.1:10808`；当前端口可用。Sprint 01/02/03 推送均已验证。 |
-| P1-3 | iPhone 浏览器中旋转后游戏仍为竖屏 | 阻塞 Sprint 09 正式验收。测试分支已补齐独立可见视口变化处理，真实设备根因待诊断确认。 |
+| P1-3 | iPhone Safari 旋转后曾保持竖屏 | 用户反馈 Hotfix 01 后已可横屏。Hotfix 02 的 iOS Safari 回归待真机确认。 |
+| P1-4 | iOS 和 Android 夸克仍无法原生横屏 | 阻塞 Sprint 09 正式验收。待用诊断记录确认实际容器、设置、宿主和版本，并复验 Hotfix 02 兼容方案。 |
 | P2-6 | 漂移平台削平地形留下“无平台平地” | 已确认是视觉问题；`amp < w/2`，冰筏不会漂出削平段。未修改。 |
 | P2-7 | 预测线不模拟旋转，忽略岩柱/陨石/间歇泉 | 已确认；预测用中心点，真实碰撞用船体点。未修改。 |
 | P2-8 | 预测视距固定 4 秒 | 高空低重力时可能到不了地面，无撞击标记。未修改。 |

@@ -1,8 +1,8 @@
-# SPACER-SPRINT-09-HOTFIX-01 · iPhone 横屏与移动端质量
+# SPACER-SPRINT-09-HOTFIX-02 · 跨浏览器横屏兼容性
 
 ## 当前状态
 
-iPhone 真机反馈系统方向锁定关闭，浏览器中的游戏旋转后仍为竖屏。登记 P1-3，Sprint 09 暂不通过正式验收。源码基线为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`，修复版为 `b97c0c5710837251a396b0db9416fa229cf85049`。范围是动态视口、安全区、触控清理、D5 HUD 和真机诊断。等待 iPhone Safari 验收及正式发布批准。[修复、证据和真机操作](../reports/sprint-09/hotfix-01.md)
+用户反馈 Hotfix 01 后 iOS Safari 可横屏，iOS 和 Android 夸克仍异常。登记 P1-4，Sprint 09 暂不通过正式验收。基线为 `b97c0c5710837251a396b0db9416fa229cf85049`。本轮覆盖容器尺寸、原生 API 请求、手动兼容横屏、触控与安全区映射及诊断。保留已交付的 Hotfix 01 与 Sprint 10–16 路线图。 [证据、预览与真机操作](../reports/sprint-09/hotfix-02.md)
 
 ## Sprint 09 原始任务
 

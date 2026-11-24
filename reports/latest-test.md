@@ -1,5 +1,7 @@
 # Spacer Sprint 09 测试报告
 
+**Hotfix 02** 增加容器只读尺寸、禁全屏 iframe、原生请求成功与拒绝、虚拟横屏坐标、跨引擎以及十关回归。两个夸克客户端及其他未验收手机浏览器按平台单列。 [Hotfix 02 兼容性矩阵](sprint-09/hotfix-02.md)
+
 **Hotfix 01** 已补做 Windows Chromium 与 WebKit 的动态旋转和十关回归。以下内容保留 Sprint 09 原始验证与交接记录。iPhone P1-3 的真机验收仍待完成。[Hotfix 01 测试与截图](sprint-09/hotfix-01.md)
 
 测试日期为 2026-11-24。源码提交为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`，基线为 Sprint 08 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。游戏文件 SHA-1 为 `4cb14d64d2b1e141c3c47614ef4acecf664415f0`。Sprint 08 的报告已 [归档](history/sprint-08-test.md)。
