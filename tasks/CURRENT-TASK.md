@@ -13,4 +13,4 @@
 
 ## 交接状态
 
-开发及桌面模拟回归已完成。GitHub 拒绝当前工作环境向 Spacer 和 Bridge 推送（HTTP 403）。两个开发分支已保存在本地 Git，并导出为增量 Git bundle。远程写入需要具备相应权限的 Git 凭据。源码验证版与截图见 [最新测试](../reports/latest-test.md)。真机验收和正式发布批准待完成。
+开发及桌面模拟回归已完成。云端推送返回 HTTP 403，Windows 本机已通过增量 Git bundle 恢复并发布两个原始分支。首次远程回读与云端 SHA 一致。本机复测、独立预览和待验收事项见 [最新测试](../reports/latest-test.md) 及 [Windows 交接记录](../reports/sprint-09/windows-handoff.md)。真机验收及正式发布批准待完成。

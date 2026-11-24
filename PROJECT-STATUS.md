@@ -9,7 +9,8 @@
 - Spacer 开发分支为 `sprint-09-mobile-quality`，当前验证版为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
 - 分支完成移动布局、图标、热区、暂停、旋转及 P2-6／P2-7／P2-8。P2-6 在保留现有地形碰撞的前提下标记冰槽。预测独立提交 `0eb19c8`。
 - 双引擎模拟矩阵及辅助着陆回归通过，真机验收和上线批准待完成。见 [最新测试](reports/latest-test.md) 和 [审计](reports/latest-audit.md)。
-- Spacer 和 Bridge 推送均被 GitHub 拒绝（HTTP 403）。已保留本地提交及增量 Git bundle。
+- Windows 本机已校验并导入两个增量包，随后发布两条 Sprint 09 分支。Spacer 分支指向 `a10a463`。Bridge 首次发布回读为原始交接提交 `e94dbeb`，本次文档更新是其后续提交。两个 `main` 均已回读核对。见 [Windows 交接记录](reports/sprint-09/windows-handoff.md)。
+- Windows Chrome 四组手机视口复测通过。独立预览固定到 Spacer 的云端提交，待 iPhone 和 Android 真机验收。[Sprint 09 手机预览](https://rawcdn.githack.com/Timer009/Spacer/a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950/vector-lander/index.html)
 - 下列 Sprint 08 快照记录已发布版本。Sprint 10–16 见 [路线图](ROADMAP.md)。
 
 ## 1. 基本信息
