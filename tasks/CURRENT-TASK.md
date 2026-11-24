@@ -1,4 +1,10 @@
-# SPACER-SPRINT-09 · 移动端质量
+# SPACER-SPRINT-09-HOTFIX-01 · iPhone 横屏与移动端质量
+
+## 当前状态
+
+iPhone 真机反馈系统方向锁定关闭，浏览器中的游戏旋转后仍为竖屏。登记 P1-3，Sprint 09 暂不通过正式验收。源码基线为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`，修复版为 `b97c0c5710837251a396b0db9416fa229cf85049`。范围是动态视口、安全区、触控清理、D5 HUD 和真机诊断。等待 iPhone Safari 验收及正式发布批准。[修复、证据和真机操作](../reports/sprint-09/hotfix-01.md)
+
+## Sprint 09 原始任务
 
 用户于 2026-11-24 批准执行。Codex 接管本轮，Z Code 暂停参与。
 

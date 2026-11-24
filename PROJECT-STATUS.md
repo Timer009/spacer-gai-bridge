@@ -5,6 +5,9 @@
 
 ## 当前开发状态 · Sprint 09
 
+- **正式验收暂停。** iPhone 真机反馈浏览器内旋转后仍为竖屏，已登记 P1-3。Hotfix 01 已完成动态模拟验证，等待 iPhone Safari 独立标签页复测。
+- Spacer 测试分支修复版为 `b97c0c5710837251a396b0db9416fa229cf85049`。保留 Sprint 09 云端提交和交接历史。 [Hotfix 01 报告](reports/sprint-09/hotfix-01.md) · [独立手机预览](https://rawcdn.githack.com/Timer009/Spacer/b97c0c5710837251a396b0db9416fa229cf85049/vector-lander/index.html)
+
 - 用户已批准 Sprint 09，Codex 接管，Z Code 暂停参与。见 [当前任务](tasks/CURRENT-TASK.md)。
 - Spacer 开发分支为 `sprint-09-mobile-quality`，当前验证版为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
 - 分支完成移动布局、图标、热区、暂停、旋转及 P2-6／P2-7／P2-8。P2-6 在保留现有地形碰撞的前提下标记冰槽。预测独立提交 `0eb19c8`。
@@ -116,7 +119,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 09 开发分支已完成模拟验证，等待真机验收和正式发布批准。
+- Sprint 09 继续等待 iPhone 横屏 P1-3 复验及正式发布批准。Hotfix 01 的 Chromium 与 WebKit 动态结果见专项报告。
 - Sprint 10–16 等待各阶段批准。
 
 ### 当前任务边界
@@ -172,6 +175,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 | 编号 | 问题 | 状态 / 说明 |
 |---|---|---|
 | P1-2 | 仓库本地 `http.proxy` 配置 | 环境项。配置仍为 `http://127.0.0.1:10808`；当前端口可用。Sprint 01/02/03 推送均已验证。 |
+| P1-3 | iPhone 浏览器中旋转后游戏仍为竖屏 | 阻塞 Sprint 09 正式验收。测试分支已补齐独立可见视口变化处理，真实设备根因待诊断确认。 |
 | P2-6 | 漂移平台削平地形留下“无平台平地” | 已确认是视觉问题；`amp < w/2`，冰筏不会漂出削平段。未修改。 |
 | P2-7 | 预测线不模拟旋转，忽略岩柱/陨石/间歇泉 | 已确认；预测用中心点，真实碰撞用船体点。未修改。 |
 | P2-8 | 预测视距固定 4 秒 | 高空低重力时可能到不了地面，无撞击标记。未修改。 |
