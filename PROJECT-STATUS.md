@@ -3,6 +3,10 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
+## 当前开发 · Sprint 12
+
+Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，等待用户验收。 [测试与审计](reports/sprint-12/sea-recovery.md) · [手机预览](https://rawcdn.githack.com/Timer009/Spacer/3ef190dc18f8a4f918ebede83ea9b895eca4b843/vector-lander/index.html)
+
 ## 正式发布 · Sprint 11
 
 - 三种模式、横屏设置滚动、平台倍率位置与轻型月面着陆器已归档。 [归档与回归](reports/sprint-11/release.md)
@@ -23,16 +27,16 @@
 | 字段 | 值 |
 |---|---|
 | 项目名称 | 矢量着陆 Vector Lander — 太阳系航线（仓库名 `Spacer`） |
-| 最后更新时间 | 2026-11-24 07:25 +08:00（Asia/Shanghai） |
+| 最后更新时间 | 2026-11-24 15:11 +0800 |
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
-| 当前分支 | `main` |
-| 当前完整 Git commit SHA | `5536ffcfeb7428497e20614474c9556fbd0ab550` |
-| 远程 `origin/main` | `5536ffcfeb7428497e20614474c9556fbd0ab550` |
+| 当前分支 | `sprint-12-falcon9-sea-recovery` |
+| 当前完整 Git commit SHA | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
+| 远程 `origin/main` | `3a8bea3d066f12c874ed5dbf50619d051abeb294` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 10 正式发布，Sprint 11 独立分支待验收 |
+| 当前开发阶段 | Sprint 11 正式发布，Sprint 12 独立分支待验收 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -41,13 +45,12 @@
 ## 2. 源码版本状态
 
 ```text
-branch       : main
-HEAD         : 5536ffcfeb7428497e20614474c9556fbd0ab550
-origin/main  : 5536ffcfeb7428497e20614474c9556fbd0ab550
-worktree     : clean
+branch       : sprint-12-falcon9-sea-recovery
+HEAD         : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
+origin/main  : 3a8bea3d066f12c874ed5dbf50619d051abeb294
 file         : vector-lander/index.html
-lines        : 3204
-SHA1         : ea5bb0b02c3a349e40df39862da65420d78a6620
+lines        : 3562
+SHA256       : 577d8b6a324d27c32245cb9fe3d0e5b4a3d7b8e8a49efa51de596762180da2e7
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
@@ -121,12 +124,12 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 11 在独立开发分支交付，等待用户实机验收。
-- 已知夸克 P1-4 暂缓。Sprint 12–16 等待各阶段批准。
+- Sprint 12 海上回收等待用户实机验收。
+- 已知夸克 P1-4 暂缓。Sprint 13–16 等待各阶段批准。
 
 ### 当前任务边界
 
-- 当前线上快照包含 Sprint 01–08。
+- 当前正式版本为 Sprint 11。以下历史审计统计以 Sprint 08 为基线。
 - 报告中的“下一阶段建议”不是已批准任务。
 
 ## 4. 问题统计

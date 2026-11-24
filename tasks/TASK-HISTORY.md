@@ -19,7 +19,8 @@ Sprint 11 已验收并归档。横屏设置可滑至末项，着陆器外观与�
 | 2026-11-24 | `SPACER-SPRINT-09-HOTFIX-02` | 夸克横屏 P1-4、三级兼容和诊断 | 等待手机真机复验 | [当前任务](CURRENT-TASK.md) · [专项报告](../reports/sprint-09/hotfix-02.md) |
 | 2026-11-24 | `SPACER-SPRINT-09` 兼容性收尾 | 兼容横屏直达、退出与成对诊断记录 | 五组手机环境报告横屏正常，夸克两端待验收 | [专项记录](../reports/sprint-09/browser-closeout.md) |
 | 2026-11-24 | `SPACER-SPRINT-10` | 三种飞船独立物理、预测与兼容性回归 | 用户试玩通过，合入与归档 | [发布归档](../reports/sprint-10/release.md) |
-| 2026-11-24 | `SPACER-SPRINT-11` | 游戏模式、任务启动与结算、战役存档隔离 | 独立分支待验收 | [实现与验证](../reports/sprint-11/game-modes.md) |
+| 2026-11-24 | `SPACER-SPRINT-11` | 游戏模式、任务启动与结算、战役存档隔离 | 已验收归档 | [发布记录](../reports/sprint-11/release.md) |
+| 2026-11-24 | `SPACER-SPRINT-12` | Falcon 9 海上回收、甲板相对运动和独立结算 | 独立分支待验收 | [验证记录](../reports/sprint-12/sea-recovery.md) |
 | 2026-11-23 | `BRIDGE-INIT-01` | 初始化 `spacer-gai-bridge` 协作报告仓库 | 已完成（`4839a81`） | 本仓库首次提交 |
 
 ## 说明
