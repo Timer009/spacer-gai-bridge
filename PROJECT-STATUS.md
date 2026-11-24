@@ -3,6 +3,14 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
+## 当前开发状态 · Sprint 09
+
+- 用户已批准 Sprint 09，Codex 接管，Z Code 暂停参与。见 [当前任务](tasks/CURRENT-TASK.md)。
+- Spacer 开发分支为 `sprint-09-mobile-quality`，当前验证版为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
+- 分支完成移动布局、图标、热区、暂停、旋转及 P2-6／P2-7／P2-8。P2-6 在保留现有地形碰撞的前提下标记冰槽。预测独立提交 `0eb19c8`。
+- 双引擎模拟矩阵及辅助着陆回归通过，真机验收和上线批准待完成。见 [最新测试](reports/latest-test.md) 和 [审计](reports/latest-audit.md)。
+- 下列 Sprint 08 快照记录已发布版本。Sprint 10–16 见 [路线图](ROADMAP.md)。
+
 ## 1. 基本信息
 
 | 字段 | 值 |
@@ -17,7 +25,7 @@
 | 远程 `origin/main` | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 01–08 均已上线；无已批准的新开发任务 |
+| 当前开发阶段 | Sprint 01–08 均已上线；Sprint 09 独立开发 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -106,12 +114,12 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- 无代码任务正在进行。
-- 等待用户决定是否继续处理剩余 P2-6 / P2-7 / P2-8，或批准新玩法。
+- Sprint 09 开发分支已完成模拟验证，等待真机验收和正式发布批准。
+- Sprint 10–16 等待各阶段批准。
 
 ### 当前任务边界
 
-- 当前线上包含 Sprint 01–08。
+- 当前线上快照包含 Sprint 01–08。
 - 报告中的“下一阶段建议”不是已批准任务。
 
 ## 4. 问题统计
@@ -185,7 +193,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 - 横屏标题右栏已加暗色底板；如真机上仍觉得背景干扰可继续调不透明度。
 - 皮肤碰撞点从 7 点加密到 16 点（猎鹰 9 / 星舰），包络仍为机头 −14、底部 +9；极端接触判定可能比旧 7 点更精确。
 
-## 5. 自动测试结果
+## 5. Sprint 01–08 自动测试记录
 
 完整记录见 [reports/latest-test.md](reports/latest-test.md)。摘要：
 
