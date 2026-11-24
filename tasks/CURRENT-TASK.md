@@ -13,4 +13,4 @@
 
 ## 交接状态
 
-开发及桌面模拟回归已完成。GitHub 拒绝当前工作环境向 Spacer 推送（403）。源码验证版与截图见 [最新测试](../reports/latest-test.md)。真机验收和正式发布批准待完成。
+开发及桌面模拟回归已完成。GitHub 拒绝当前工作环境向 Spacer 和 Bridge 推送（HTTP 403）。两个开发分支已保存在本地 Git，并导出为增量 Git bundle。远程写入需要具备相应权限的 Git 凭据。源码验证版与截图见 [最新测试](../reports/latest-test.md)。真机验收和正式发布批准待完成。
