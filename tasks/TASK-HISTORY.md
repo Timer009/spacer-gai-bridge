@@ -1,5 +1,8 @@
 # TASK HISTORY
 
+Sprint 14 候选 v2.0.14-rc.1，等待验收。 [阶段记录和回归](../reports/sprint-14/realistic-visuals.md)
+
+
 Sprint 13 已归档。触控及结算防误触的真机确认仍待补齐。
 
 

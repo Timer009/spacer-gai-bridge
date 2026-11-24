@@ -1,5 +1,8 @@
 # Spacer 2.0 路线图
 
+Sprint 14 已在独立分支提出候选，等待验收。 [阶段记录](reports/sprint-14/realistic-visuals.md)
+
+
 Sprint 13 已归档。触控及结算防误触的真机确认仍待补齐。
 
 

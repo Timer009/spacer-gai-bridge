@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 14 候选 v2.0.14-rc.1，等待验收。 [阶段记录和回归](../reports/sprint-14/realistic-visuals.md)
+
+
 当前验收版本为 `v2.0.13-rc.6`。 [镜头、目标及触控回归](../reports/sprint-13/rc6-camera-input.md)
 
 
