@@ -1,6 +1,6 @@
 # Spacer 2.0 路线图
 
-Sprint 10 已归档。Sprint 11 已获批准。Sprint 12–16 等待用户逐项批准。
+Sprint 10 已归档。Sprint 11 独立分支等待验收。Sprint 12–16 等待用户逐项批准。
 
 | Sprint | 范围 |
 |---|---|

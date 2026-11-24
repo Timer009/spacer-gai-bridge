@@ -2,6 +2,11 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 · Spacer Sprint 11 游戏模式与任务系统
+
+- `3e4b176` 增加三种玩法入口、按任务锁定选型与共享启动结算。自由飞行可无限重试，战役数据独立保存。
+- 回收挑战展示 Falcon 9 海上回收和 Super Heavy 塔架捕获的即将开放信息。 [验证报告](../reports/sprint-11/game-modes.md)
+
 ## 2026-11-24 · Sprint 10 正式归档
 
 - 用户试玩批准合入，`5536ffc` 标记为 `sprint-10`。夸克 P1-4 暂缓。 [发布归档](../reports/sprint-10/release.md)

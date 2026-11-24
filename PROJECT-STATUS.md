@@ -3,6 +3,11 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
+## 当前开发 · Sprint 11
+
+- `sprint-11-game-modes` 候选版为 `3e4b17625270bcba98826b56452321f826ac8722`。主菜单提供太阳系战役、自由飞行与回收挑战。战役保留原十关，自由飞行与战役存档隔离。两项回收挑战标注即将开放。 [实现与验证](reports/sprint-11/game-modes.md) · [游戏预览](https://rawcdn.githack.com/Timer009/Spacer/3e4b17625270bcba98826b56452321f826ac8722/vector-lander/index.html)
+- Sprint 11 等待试玩验收。正式 Pages 为 Sprint 10。 [启动任务](tasks/CURRENT-TASK.md)
+
 ## 正式发布 · Sprint 10
 
 - 用户试玩后批准归档。Sprint 10 为 `5536ffcfeb7428497e20614474c9556fbd0ab550`，标签 `sprint-10`。三种独立飞行型号和旧存档兼容性均已回归。 [发布归档](reports/sprint-10/release.md)
@@ -28,7 +33,7 @@
 | 远程 `origin/main` | `5536ffcfeb7428497e20614474c9556fbd0ab550` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 10 已验收归档，Sprint 11 独立开发 |
+| 当前开发阶段 | Sprint 10 正式发布，Sprint 11 独立分支待验收 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -117,7 +122,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 11 在独立开发分支交付。
+- Sprint 11 在独立开发分支交付，等待用户实机验收。
 - 已知夸克 P1-4 暂缓。Sprint 12–16 等待各阶段批准。
 
 ### 当前任务边界

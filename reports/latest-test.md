@@ -1,5 +1,9 @@
 # Spacer 测试报告
 
+## Sprint 11
+
+回归覆盖原十关、29 个可用自由飞行组合、模式切换、任务型号、自由飞行重试与结算存档隔离。 [Sprint 11 验证报告](sprint-11/game-modes.md)
+
 ## Sprint 10
 
 四套 Windows 浏览器复测三型十关、旧存档、固定步长预测与移动布局。经典矢量以 Sprint 09 归档版作逐状态对照。 [Sprint 10 测试与性能证据](sprint-10/vehicle-physics.md)
