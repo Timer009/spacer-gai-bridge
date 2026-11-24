@@ -2,6 +2,10 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 · Sprint 09 正式归档
+
+- `fbc8e0f` 作为 `sprint-09` 版本纳入 `main`。用户确认五组手机真机横屏通过，两端夸克的问题按已知兼容性缺陷暂缓。 [发布归档](../reports/sprint-09/release.md)
+
 ## 2026-11-24 · Spacer Sprint 09 跨浏览器兼容性收尾
 
 - `fbc8e0f` 增加显式兼容模式链接与退出入口，为方向检查页加入旋转前后成对采样。默认自动布局和飞行逻辑保持原样。 [收尾记录](../reports/sprint-09/browser-closeout.md)

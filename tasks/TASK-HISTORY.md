@@ -11,7 +11,7 @@
 | 2026-11-24 | `SPACER-SPRINT-06` | iOS Safari 旋转崩溃热修（移除 Fullscreen/Orientation Lock） | 已上线（`e56797e`） | [reports/latest-test.md](../reports/latest-test.md) |
 | 2026-11-24 | `SPACER-SPRINT-07` | 安卓横屏 Canvas 拉伸、5×2 网格地图、HUD/按钮间距 | 已上线（`69c959a`） | [reports/latest-test.md](../reports/latest-test.md) |
 | 2026-11-24 | `SPACER-SPRINT-08` | 竖屏燃料条瘦身、D5 风标/ATM 避让、开场字号自适应 | 已上线（`264194f`） | [reports/latest-test.md](../reports/latest-test.md) |
-| 2026-11-24 | `SPACER-SPRINT-09` | 移动端专项优化、冰筏、轨迹预测 | 模拟测试通过，正式验收暂停 | [测试](../reports/latest-test.md) |
+| 2026-11-24 | `SPACER-SPRINT-09` | 移动端专项优化、冰筏、轨迹预测 | 已验收并归档发布，夸克缺陷暂缓 | [发布归档](../reports/sprint-09/release.md) |
 | 2026-11-24 | `SPACER-SPRINT-09-HOTFIX-01` | iPhone 横屏 P1-3、动态视口与 HUD | 模拟通过，用户报告 iOS Safari 可横屏 | [专项报告](../reports/sprint-09/hotfix-01.md) |
 | 2026-11-24 | `SPACER-SPRINT-09-HOTFIX-02` | 夸克横屏 P1-4、三级兼容和诊断 | 等待手机真机复验 | [当前任务](CURRENT-TASK.md) · [专项报告](../reports/sprint-09/hotfix-02.md) |
 | 2026-11-24 | `SPACER-SPRINT-09` 兼容性收尾 | 兼容横屏直达、退出与成对诊断记录 | 五组手机环境报告横屏正常，夸克两端待验收 | [专项记录](../reports/sprint-09/browser-closeout.md) |

@@ -3,18 +3,11 @@
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
-## 当前开发状态 · Sprint 09
+## 发布基线 · Sprint 09
 
-- **夸克 P1-4 待验收。** 最新反馈为 iOS Safari，以及 iOS 和 Android 的 Chrome、Edge 均可正常横屏。两端夸克仍异常，尚无旋转前后的诊断读数。 [专项收尾与真机操作](reports/sprint-09/browser-closeout.md)
-- 当前测试版为 `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42`，提供直接兼容横屏入口、明确的退出操作和成对的旋转检查记录。 [独立手机预览](https://rawcdn.githack.com/Timer009/Spacer/fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42/vector-lander/index.html)
-- Hotfix 01 验证版为 `b97c0c5710837251a396b0db9416fa229cf85049`，保留在测试分支历史。 [Hotfix 01 报告](reports/sprint-09/hotfix-01.md)
-
-- 用户已批准 Sprint 09，Codex 接管，Z Code 暂停参与。见 [当前任务](tasks/CURRENT-TASK.md)。
-- Spacer 开发分支为 `sprint-09-mobile-quality`，Hotfix 01 的原始 Sprint 09 基线为 `a10a4634dd75dca6a3e78f9eed7e63c9ea5b5950`。源码 `main` 基线为 `264194f6b1a40a2990c0d544d60c2b61e8b8bee1`。
-- 分支完成移动布局、图标、热区、暂停、旋转及 P2-6／P2-7／P2-8。P2-6 在保留现有地形碰撞的前提下标记冰槽。预测独立提交 `0eb19c8`。
-- 双引擎模拟矩阵及辅助着陆回归通过，真机验收和上线批准待完成。见 [最新测试](reports/latest-test.md) 和 [审计](reports/latest-audit.md)。
-- Windows 本机导入两个增量包时，Spacer 和 Bridge 首次回读的原始交接提交分别为 `a10a463` 与 `e94dbeb`。两个测试分支已在此基础上快进至 Hotfix 01。 [Windows 交接记录](reports/sprint-09/windows-handoff.md)
-- 下列 Sprint 08 快照记录已发布版本。Sprint 10–16 见 [路线图](ROADMAP.md)。
+- 发布版本为 `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42`，归档标签为 `sprint-09`。移动布局、HUD、旋转、兼容横屏、冰筏与轨迹预测的验收记录见 [发布归档](reports/sprint-09/release.md)。
+- 用户确认 iOS Safari、iOS Chrome、iOS Edge、Android Chrome 和 Android Edge 真机横屏通过。两端夸克 P1-4 作为已知兼容缺陷暂缓，后续阶段可以继续。 [专项记录](reports/sprint-09/browser-closeout.md)
+- Sprint 10 已批准，仅在独立开发分支交付三种飞船物理。Sprint 11–16 仍等待逐项批准。 [当前任务](tasks/CURRENT-TASK.md) · [路线图](ROADMAP.md)
 
 ## 1. 基本信息
 
@@ -26,11 +19,11 @@
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `main` |
-| 当前完整 Git commit SHA | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
-| 远程 `origin/main` | `264194f6b1a40a2990c0d544d60c2b61e8b8bee1` |
+| 当前完整 Git commit SHA | `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42` |
+| 远程 `origin/main` | `fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 01–08 均已上线；Sprint 09 独立开发 |
+| 当前开发阶段 | Sprint 09 已验收归档；Sprint 10 独立开发 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -40,15 +33,15 @@
 
 ```text
 branch       : main
-HEAD         : 264194f6b1a40a2990c0d544d60c2b61e8b8bee1
-origin/main  : 264194f6b1a40a2990c0d544d60c2b61e8b8bee1
+HEAD         : fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42
+origin/main  : fbc8e0f2f6d37beabb5a4545c46e54a54e1c7d42
 worktree     : clean
 file         : vector-lander/index.html
-lines        : 2732
-SHA1         : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
+lines        : 3169
+SHA1         : e39de1ae46039f6348f95bf569efd9aaf44a22d6
 ```
 
-线上 Pages 当前对应的游戏文件：
+Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
 
 ```text
 Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
@@ -65,7 +58,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 - **Sprint 06（iOS 旋转崩溃热修）**：`e56797efdd9c3c4ace9a8e4ce66ab15c28d07d95`，已上线。
 - **Sprint 07（安卓横屏画布/网格修复）**：`69c959abcd8d9084f0bd53f78f745b63f9884d4e`，已上线。
 - **Sprint 08（竖屏 HUD 瘦身 + D5 避让）**：`264194f6b1a40a2990c0d544d60c2b61e8b8bee1`，已推送、Pages 已核对。
-- 当前线上与本地 `main` 一致，均为 Sprint 08。
+- **Sprint 09**：`fbc8e0f`，作为后续开发及发布基线。 [发布归档](reports/sprint-09/release.md)
 
 ## 3. 任务状态
 

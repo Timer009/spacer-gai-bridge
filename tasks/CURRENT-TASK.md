@@ -1,10 +1,10 @@
-# SPACER-SPRINT-09 · 跨浏览器兼容性收尾
+# SPACER-SPRINT-09 · 验收与归档
 
 ## 当前状态
 
-用户反馈 iOS Safari、iOS 和 Android 的 Chrome 与 Edge 横屏正常。两端夸克仍未通过，P1-4 保持开放。以 `319d54ac4256d50cc1fa931fe133c265c89f5315` 为基线收尾，提供兼容横屏直达入口和同页成对采样。等待夸克真机验收及正式发布批准。 [证据、预览与真机操作](../reports/sprint-09/browser-closeout.md)
+用户确认 iOS Safari、iOS 和 Android 的 Chrome 与 Edge 横屏验收通过。两端夸克 P1-4 作为已知缺陷暂缓。Sprint 09 验收结束，`fbc8e0f` 纳入 `main` 并标记 `sprint-09`。已批准在独立分支开展 Sprint 10。 [发布归档](../reports/sprint-09/release.md)
 
-## Sprint 09 原始任务
+## Sprint 09 原始任务（历史）
 
 用户于 2026-11-24 批准执行。Codex 接管本轮，Z Code 暂停参与。
 
@@ -17,6 +17,6 @@
 - 分批提交并推送，保留 main 与线上版本，等待用户验收及正式发布批准。
 - 本轮只执行 Sprint 09。Sprint 10–16 等待批准，见 [ROADMAP.md](../ROADMAP.md)。
 
-## 交接状态
+## 原云端交接状态（历史）
 
 开发及桌面模拟回归已完成。云端推送返回 HTTP 403，Windows 本机已通过增量 Git bundle 恢复并发布两个原始分支。首次远程回读与云端 SHA 一致。本机复测、独立预览和待验收事项见 [最新测试](../reports/latest-test.md) 及 [Windows 交接记录](../reports/sprint-09/windows-handoff.md)。真机验收及正式发布批准待完成。

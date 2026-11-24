@@ -1,5 +1,7 @@
 # Spacer Sprint 09 测试报告
 
+**Sprint 09 发布门禁通过。** 手机真机验收反馈、已知夸克问题和最终四浏览器回归汇总于发布归档。 [发布归档](sprint-09/release.md)
+
 **跨浏览器兼容性收尾**。最新真机反馈覆盖 iOS Safari、两端 Chrome 和 Edge，以上均正常横屏。两端夸克暂未通过。兼容横屏直达入口和诊断采样由四个 Windows 浏览器回归。 [专项收尾记录](sprint-09/browser-closeout.md)
 
 **Hotfix 02** 增加容器只读尺寸、禁全屏 iframe、原生请求成功与拒绝、虚拟横屏坐标、跨引擎以及十关回归。两个夸克客户端及其他未验收手机浏览器按平台单列。 [Hotfix 02 兼容性矩阵](sprint-09/hotfix-02.md)
