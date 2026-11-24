@@ -1,5 +1,8 @@
 # TASK HISTORY
 
+Sprint 11 已验收并归档。横屏设置可滑至末项，着陆器外观与倍率标牌已更新，四套浏览器回归通过。 [发布记录](../reports/sprint-11/release.md)
+
+
 | 日期 | Task ID | 任务 | 状态 | 证据 |
 |---|---|---|---|---|
 | 2026-11-23 | `SPACER-AUDIT-01` | 对 Spacer 做只读审计（基线 `526397a`） | 已完成 | [reports/latest-audit.md](../reports/latest-audit.md) |

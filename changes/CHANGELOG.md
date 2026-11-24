@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 11 已验收并归档。横屏设置可滑至末项，着陆器外观与倍率标牌已更新，四套浏览器回归通过。 [发布记录](../reports/sprint-11/release.md)
+
+
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
 ## 2026-11-24 · Spacer Sprint 11 游戏模式与任务系统

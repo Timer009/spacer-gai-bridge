@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 11 已验收并归档。横屏设置可滑至末项，着陆器外观与倍率标牌已更新，四套浏览器回归通过。 [发布记录](../reports/sprint-11/release.md)
+
+
 ## Sprint 11
 
 回归覆盖原十关、29 个可用自由飞行组合、模式切换、任务型号、自由飞行重试与结算存档隔离。 [Sprint 11 验证报告](sprint-11/game-modes.md)
