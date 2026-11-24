@@ -1,5 +1,8 @@
 # PROJECT STATUS — Spacer / 矢量着陆
 
+Sprint 14 已归档为 v2.0.14，正式 Pages 已回读。专项真机指标继续待确认。
+
+
 Sprint 13 已归档。触控及结算防误触的真机确认仍待补齐。
 
 
