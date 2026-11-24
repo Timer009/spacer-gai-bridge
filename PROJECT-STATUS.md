@@ -8,13 +8,15 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 
 ## 当前开发 · Sprint 13
 
+当前验收版本为 `v2.0.13-rc.5`。 [版本登记](RELEASE-VERSIONS.md)
+
 横屏结算候选已更新，等待用户真机复验。 [横屏结算](reports/sprint-13/landscape-results.md)
 
 二次真机反馈已修正近船浪相和结算防误触，等待最终验收。 [二次收尾](reports/sprint-13/second-closeout.md)
 
 塔架捕获已获用户试玩反馈。平台得分标识与海上吃水两项收尾修正现待最终验收。 [收尾记录](reports/sprint-13/closeout.md)
 
-独立分支 `sprint-13-tower-catch`，候选提交 `8817c4822e4dba98a9807ed632a5e00ba6dd2bb9`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/8817c4822e4dba98a9807ed632a5e00ba6dd2bb9/vector-lander/index.html) · [审计与回归](reports/sprint-13/tower-catch.md)
+独立分支 `sprint-13-tower-catch`，候选提交 `a724b6aca344169199e2a1e1991523f099ca5196`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/a724b6aca344169199e2a1e1991523f099ca5196/vector-lander/index.html) · [审计与回归](reports/sprint-13/tower-catch.md)
 
 ## 正式发布 · Sprint 12
 
@@ -45,7 +47,7 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
 | 当前分支 | `sprint-13-tower-catch` |
-| 当前完整 Git commit SHA | `8817c4822e4dba98a9807ed632a5e00ba6dd2bb9` |
+| 当前完整 Git commit SHA | `a724b6aca344169199e2a1e1991523f099ca5196` |
 | 远程 `origin/main` | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
@@ -59,11 +61,11 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 
 ```text
 branch       : sprint-13-tower-catch
-HEAD         : 8817c4822e4dba98a9807ed632a5e00ba6dd2bb9
+HEAD         : a724b6aca344169199e2a1e1991523f099ca5196
 origin/main  : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
 file         : vector-lander/index.html
-lines        : 3695
-SHA256       : e751ca9b4ceefe00b6b0245cafaf282f800536a3c6dc935f5eb1f64a19c8b1ed
+lines        : 3734
+SHA256       : c3f372208a8c5680cdf05962a8761626f8f7fa4ac1439d3d50f60490ee14b315
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
