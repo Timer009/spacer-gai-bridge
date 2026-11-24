@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 13 在独立分支交付 Super Heavy 上部挂点捕获，等待用户验收。 [实现、测试与截图](../reports/sprint-13/tower-catch.md)
+
+
 ## 2026-11-24 · Falcon 9 海上回收
 
 游戏候选提交 `3ef190dc18f8a4f918ebede83ea9b895eca4b843`。新增动态海上甲板、海风、相对着陆判定和无限重试。Sprint 14 路线图补充 2.5D 写实视觉方向。 [记录](../reports/sprint-12/sea-recovery.md)

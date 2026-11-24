@@ -1,5 +1,8 @@
 # Spacer 项目只读审计报告（基线 `526397a`）
 
+Sprint 13 在独立分支交付 Super Heavy 上部挂点捕获，等待用户验收。 [实现、测试与截图](../reports/sprint-13/tower-catch.md)
+
+
 ## Sprint 12
 
 海上挑战沿用 Falcon 9 型号和 120 Hz 固定步长。甲板位置、速度和姿态来自同一运动函数，绘制、碰撞、预测和着陆后的跟船共用甲板坐标。挑战结算在战役持久化前返回。 [审计与边界](sprint-12/sea-recovery.md)

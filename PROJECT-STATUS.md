@@ -6,9 +6,13 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
-## 当前开发 · Sprint 12
+## 当前开发 · Sprint 13
 
-Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，用户已验收。 [测试与审计](reports/sprint-12/sea-recovery.md) · [手机预览](https://rawcdn.githack.com/Timer009/Spacer/3ef190dc18f8a4f918ebede83ea9b895eca4b843/vector-lander/index.html)
+独立分支 `sprint-13-tower-catch`，候选提交 `b7a3a758e3b80d8715645ad439147cad3c5ad39e`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/b7a3a758e3b80d8715645ad439147cad3c5ad39e/vector-lander/index.html) · [审计与回归](reports/sprint-13/tower-catch.md)
+
+## 正式发布 · Sprint 12
+
+[真机验收与 Pages 归档](reports/sprint-12/release.md)
 
 ## 正式发布 · Sprint 11
 
@@ -34,8 +38,8 @@ Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，用户已�
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
-| 当前分支 | `sprint-12-falcon9-sea-recovery` |
-| 当前完整 Git commit SHA | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
+| 当前分支 | `sprint-13-tower-catch` |
+| 当前完整 Git commit SHA | `b7a3a758e3b80d8715645ad439147cad3c5ad39e` |
 | 远程 `origin/main` | `3ef190dc18f8a4f918ebede83ea9b895eca4b843` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
@@ -48,12 +52,12 @@ Falcon 9 海上回收已在 `sprint-12-falcon9-sea-recovery` 交付，用户已�
 ## 2. 源码版本状态
 
 ```text
-branch       : sprint-12-falcon9-sea-recovery
-HEAD         : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
+branch       : sprint-13-tower-catch
+HEAD         : b7a3a758e3b80d8715645ad439147cad3c5ad39e
 origin/main  : 3ef190dc18f8a4f918ebede83ea9b895eca4b843
 file         : vector-lander/index.html
-lines        : 3562
-SHA256       : 577d8b6a324d27c32245cb9fe3d0e5b4a3d7b8e8a49efa51de596762180da2e7
+lines        : 3623
+SHA256       : 8c9a5ec3427120a986c905098957c8b0309826a8deb171c43e00785a7212bbb0
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
@@ -127,7 +131,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 12 海上回收等待用户实机验收。
+- Sprint 13 塔架捕获等待用户实机验收。
 - 已知夸克 P1-4 暂缓。Sprint 13–16 等待各阶段批准。
 
 ### 当前任务边界

@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 13 在独立分支交付 Super Heavy 上部挂点捕获，等待用户验收。 [实现、测试与截图](../reports/sprint-13/tower-catch.md)
+
+
 ## Sprint 12
 
 专项测试覆盖六种海上接触结果、从出生点仅靠飞行输入完成回收、桌面键盘、触屏模拟与旋转，以及原十关和 29 个自由飞行组合。 [详细证据](sprint-12/sea-recovery.md)

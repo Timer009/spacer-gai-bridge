@@ -1,5 +1,8 @@
 # TASK HISTORY
 
+Sprint 13 在独立分支交付 Super Heavy 上部挂点捕获，等待用户验收。 [实现、测试与截图](../reports/sprint-13/tower-catch.md)
+
+
 Sprint 11 已验收并归档。横屏设置可滑至末项，着陆器外观与倍率标牌已更新，四套浏览器回归通过。 [发布记录](../reports/sprint-11/release.md)
 
 
