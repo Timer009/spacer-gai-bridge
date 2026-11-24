@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+横屏结算候选已更新，等待用户真机复验。 [横屏测试与对比](../reports/sprint-13/landscape-results.md)
+
+
 二次真机反馈已修正近船浪相和结算防误触，等待最终验收。 [二次收尾与截图](../reports/sprint-13/second-closeout.md)
 
 

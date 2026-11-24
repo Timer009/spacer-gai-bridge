@@ -1,5 +1,8 @@
 # Sprint 13 二次验收候选
 
+最新横屏修正及试玩见[横屏结算验收](landscape-results.md)。
+
+
 源码提交 `3fae3a973e943c90ed875e76ae1d600af0571f88`。[固定试玩](https://rawcdn.githack.com/Timer009/Spacer/3fae3a973e943c90ed875e76ae1d600af0571f88/vector-lander/index.html)
 
 ## 船体吃水
