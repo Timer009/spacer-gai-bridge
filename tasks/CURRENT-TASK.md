@@ -1,8 +1,8 @@
-# SPACER-SPRINT-09-HOTFIX-02 · 跨浏览器横屏兼容性
+# SPACER-SPRINT-09 · 跨浏览器兼容性收尾
 
 ## 当前状态
 
-用户反馈 Hotfix 01 后 iOS Safari 可横屏，iOS 和 Android 夸克仍异常。登记 P1-4，Sprint 09 暂不通过正式验收。基线为 `b97c0c5710837251a396b0db9416fa229cf85049`。本轮覆盖容器尺寸、原生 API 请求、手动兼容横屏、触控与安全区映射及诊断。保留已交付的 Hotfix 01 与 Sprint 10–16 路线图。 [证据、预览与真机操作](../reports/sprint-09/hotfix-02.md)
+用户反馈 iOS Safari、iOS 和 Android 的 Chrome 与 Edge 横屏正常。两端夸克仍未通过，P1-4 保持开放。以 `319d54ac4256d50cc1fa931fe133c265c89f5315` 为基线收尾，提供兼容横屏直达入口和同页成对采样。等待夸克真机验收及正式发布批准。 [证据、预览与真机操作](../reports/sprint-09/browser-closeout.md)
 
 ## Sprint 09 原始任务
 

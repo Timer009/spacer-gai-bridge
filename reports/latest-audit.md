@@ -762,6 +762,8 @@ M。
 
 ## Sprint 09 分支复核
 
+最新反馈确认 iOS Safari 和两端 Chrome、Edge 可正常横屏。两端夸克原生横屏根因缺少真机数据，P1-4 保持开放。新增同页采样和兼容模式直达，便于区分页面、视口和浏览器宿主。 [专项收尾记录](sprint-09/browser-closeout.md)
+
 P1-4 已登记。用户反馈 Hotfix 01 后 iOS Safari 可横屏，而 iOS 与 Android 夸克仍异常。原生策略、页面宿主及实际尺寸变化应在夸克真机读取，不能由桌面 WebKit 或 Chromium 代替。 [Hotfix 02 根因分析](sprint-09/hotfix-02.md)
 
 P1-3 已登记。iPhone 用户报告方向锁定关闭后仍无法在预览中横屏。基线在仅 `visualViewport` 改变的模拟中停留在旧 Canvas 尺寸，修复版可重排。该模拟与真机现象相容，仍需用真机事件日志区分浏览器是否实际提供了横屏尺寸。[P1-3 根因分析与证据](sprint-09/hotfix-01.md)

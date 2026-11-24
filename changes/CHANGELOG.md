@@ -2,6 +2,10 @@
 
 本文件记录报告仓库的初始化/更新，以及 Spacer 源码变更摘要。源码的完整历史以 <https://github.com/Timer009/Spacer> 为准。
 
+## 2026-11-24 · Spacer Sprint 09 跨浏览器兼容性收尾
+
+- `fbc8e0f` 增加显式兼容模式链接与退出入口，为方向检查页加入旋转前后成对采样。默认自动布局和飞行逻辑保持原样。 [收尾记录](../reports/sprint-09/browser-closeout.md)
+
 ## 2026-11-24 · Spacer Sprint 09 Hotfix 02
 
 - 以实测游戏容器尺寸布局，增加 ResizeObserver，保留 Hotfix 01 的窗口、可见视口和方向事件路径。
