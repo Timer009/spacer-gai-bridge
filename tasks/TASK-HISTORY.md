@@ -1,5 +1,8 @@
 # TASK HISTORY
 
+Sprint 15 候选 v2.0.15-rc.1，等待真机验收。 [测试和性能](../reports/sprint-15/optimization.md)
+
+
 Sprint 14 已归档为 v2.0.14，正式 Pages 已回读。专项真机指标继续待确认。
 
 

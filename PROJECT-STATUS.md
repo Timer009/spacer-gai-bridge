@@ -12,9 +12,13 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
-## 当前开发 · Sprint 14
+## 当前开发 · Sprint 15
 
-`v2.0.14-rc.1` 等待验收，源码 `bddbd34bc96174bec293db9a2e497d00bcea130c`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/bddbd34bc96174bec293db9a2e497d00bcea130c/vector-lander/index.html) · [阶段与测试](reports/sprint-14/realistic-visuals.md)
+`v2.0.15-rc.1` 等待真机验收，Spacer `b9c872526e7b4e23e639ddee407a51d933d1a632`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/b9c872526e7b4e23e639ddee407a51d933d1a632/vector-lander/index.html) · [性能与回归](reports/sprint-15/optimization.md)
+
+## 正式发布 · Sprint 14
+
+正式 Pages 为 `v2.0.14`，提交 `951d13b58e4800d0f9afa57bf362d2b15a186aac`。 [验收边界与归档](reports/sprint-14/release.md)
 
 ## 正式发布 · Sprint 13
 
@@ -48,12 +52,12 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
-| 当前分支 | `sprint-14-realistic-visuals` |
-| 当前完整 Git commit SHA | `bddbd34bc96174bec293db9a2e497d00bcea130c` |
-| 远程 `origin/main` | `b61e1af9c2915186687e7066d00d009e21f57879` |
+| 当前分支 | `sprint-15-optimization` |
+| 当前完整 Git commit SHA | `b9c872526e7b4e23e639ddee407a51d933d1a632` |
+| 远程 `origin/main` | `951d13b58e4800d0f9afa57bf362d2b15a186aac` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 13 正式发布，Sprint 14 候选待验收 |
+| 当前开发阶段 | Sprint 14 正式发布，Sprint 15 候选待验收 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -62,12 +66,12 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 ## 2. 源码版本状态
 
 ```text
-branch       : sprint-14-realistic-visuals
-HEAD         : bddbd34bc96174bec293db9a2e497d00bcea130c
-origin/main  : b61e1af9c2915186687e7066d00d009e21f57879
+branch       : sprint-15-optimization
+HEAD         : b9c872526e7b4e23e639ddee407a51d933d1a632
+origin/main  : 951d13b58e4800d0f9afa57bf362d2b15a186aac
 file         : vector-lander/index.html
-lines        : 3828
-SHA256       : 1d098fc7f95e6cfb9c7450568a8b1c4c6243c6804e3da8bde11ddef9263d4f7c
+lines        : 3911
+SHA256       : edd0a3bc987ec3f9a5c335c0d0efebfddc10699392623ea98372402f178887d0
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。
@@ -141,7 +145,7 @@ Pages hash : 226ae26e6e4c6c12b72cc632f30fb63916440eb4
 
 ### 进行中
 
-- Sprint 14 候选等待用户真机验收。
+- Sprint 15 候选等待用户真机验收。
 - 已知夸克 P1-4 暂缓。Sprint 13–16 等待各阶段批准。
 
 ### 当前任务边界

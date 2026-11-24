@@ -1,0 +1,218 @@
+{
+  "performance": [
+    {
+      "name": "Chrome",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "D5",
+      "median": 16.6,
+      "p95": 17.3,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "Falcon9",
+      "median": 16.6,
+      "p95": 16.9,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "Tower",
+      "median": 16.6,
+      "p95": 16.8,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "D5",
+      "median": 16.6,
+      "p95": 18.8,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "Falcon9",
+      "median": 16.6,
+      "p95": 17,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "Tower",
+      "median": 16.6,
+      "p95": 16.8,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "D5",
+      "median": 16.6,
+      "p95": 16.9,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "Falcon9",
+      "median": 16.6,
+      "p95": 16.8,
+      "maxPending": 1
+    },
+    {
+      "name": "Chrome",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "Tower",
+      "median": 16.6,
+      "p95": 16.9,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "D5",
+      "median": 21,
+      "p95": 26,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "Falcon9",
+      "median": 22,
+      "p95": 28,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/release",
+      "quality": "reference",
+      "scene": "Tower",
+      "median": 17,
+      "p95": 21,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "D5",
+      "median": 23,
+      "p95": 41,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "Falcon9",
+      "median": 24,
+      "p95": 38,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "high",
+      "scene": "Tower",
+      "median": 18,
+      "p95": 26,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "D5",
+      "median": 20,
+      "p95": 25,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "Falcon9",
+      "median": 21,
+      "p95": 26,
+      "maxPending": 1
+    },
+    {
+      "name": "WebKit",
+      "route": "/fix",
+      "quality": "low",
+      "scene": "Tower",
+      "median": 19,
+      "p95": 24,
+      "maxPending": 1
+    }
+  ],
+  "heap": [
+    {
+      "seconds": 7,
+      "heapMiB": 2.37,
+      "retries": 3,
+      "particles": 0,
+      "fragments": 0,
+      "points": 61,
+      "raf": 1,
+      "state": "levelIntro"
+    },
+    {
+      "seconds": 22,
+      "heapMiB": 2.52,
+      "retries": 7,
+      "particles": 0,
+      "fragments": 0,
+      "points": 62,
+      "raf": 1,
+      "state": "levelIntro"
+    },
+    {
+      "seconds": 37,
+      "heapMiB": 2.56,
+      "retries": 11,
+      "particles": 103,
+      "fragments": 0,
+      "points": 60,
+      "raf": 1,
+      "state": "playing"
+    },
+    {
+      "seconds": 52,
+      "heapMiB": 2.6,
+      "retries": 15,
+      "particles": 97,
+      "fragments": 0,
+      "points": 63,
+      "raf": 1,
+      "state": "playing"
+    },
+    {
+      "seconds": 67,
+      "heapMiB": 2.61,
+      "retries": 20,
+      "particles": 0,
+      "fragments": 0,
+      "points": 61,
+      "raf": 1,
+      "state": "levelIntro"
+    }
+  ]
+}

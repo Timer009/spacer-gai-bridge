@@ -1,5 +1,8 @@
 # Spacer 2.0 路线图
 
+Sprint 15 独立候选待验收。 [性能与回归](reports/sprint-15/optimization.md)
+
+
 Sprint 14 已归档为 v2.0.14，正式 Pages 已回读。专项真机指标继续待确认。
 
 
