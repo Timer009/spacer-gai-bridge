@@ -1,5 +1,7 @@
 # CHANGELOG
 
+v2.0.15-hotfix.1-rc.1 在成功过场和结算期间持续以甲板坐标更新 Falcon 9，保留着陆原位、升沉和横摇。 [专项报告](../reports/sprint-15/recovery-deck-hotfix.md)
+
 Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
 
 

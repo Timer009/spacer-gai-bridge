@@ -1,5 +1,7 @@
 # TASK HISTORY
 
+正式版真机验收报告海上回收成功后火箭与甲板脱离。热修候选待用户验收。 [专项报告](../reports/sprint-15/recovery-deck-hotfix.md)
+
 Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
 
 

@@ -1,5 +1,7 @@
 # PROJECT STATUS — Spacer / 矢量着陆
 
+正式 Pages 当前为 v2.0.15。海上回收结算脱离甲板的修复已进入独立候选，等待真机验收。 [专项报告](reports/sprint-15/recovery-deck-hotfix.md)
+
 Sprint 14 已归档为 v2.0.14，正式 Pages 已回读。专项真机指标继续待确认。
 
 
