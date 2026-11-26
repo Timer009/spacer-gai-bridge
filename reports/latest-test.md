@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 15 rc.2c 已提交视觉专项。 [显示与关键回归](../reports/sprint-15/rc2c-visuals.md)
+
+
 Sprint 15 rc.2a 已获阶段验收，rc.2b 镜头专项已提交。 [候选记录](../reports/sprint-15/rc2b-camera.md)
 
 
