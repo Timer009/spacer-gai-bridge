@@ -12,9 +12,9 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 > 本文件是 Spacer 项目的当前状态快照。其他 Agent 应先读本文件，再读审计与测试报告。
 > 本文件不是任务批准文件；只有 `tasks/CURRENT-TASK.md` 中记录的内容才是用户已确认任务。
 
-## 当前开发 · Sprint 15
+## 正式发布 · Sprint 15
 
-`v2.0.15-rc.2e` 等待最终验收，Spacer `1de74e5e232daf90574556337be20ae9480039e5`。 [试玩](https://rawcdn.githack.com/Timer009/Spacer/1de74e5e232daf90574556337be20ae9480039e5/vector-lander/index.html) · [移动按键布局专项](reports/sprint-15/rc2e-controls.md)
+用户已完成 rc.2e 真机验收，正式版 `v2.0.15`，Spacer `32e1d6f682b05a50d58e2d4145f8497a57590cdf`。 [发布归档](reports/sprint-15/release.md)
 
 ## 正式发布 · Sprint 14
 
@@ -52,12 +52,12 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 | 源码仓库 | <https://github.com/Timer009/Spacer> |
 | 报告仓库 | <https://github.com/Timer009/spacer-gai-bridge> |
 | 线上游戏 | <https://timer009.github.io/Spacer/vector-lander/> |
-| 当前分支 | `sprint-15-optimization` |
-| 当前完整 Git commit SHA | `1de74e5e232daf90574556337be20ae9480039e5` |
-| 远程 `origin/main` | `951d13b58e4800d0f9afa57bf362d2b15a186aac` |
+| 当前分支 | `main` |
+| 当前完整 Git commit SHA | `32e1d6f682b05a50d58e2d4145f8497a57590cdf` |
+| 远程 `origin/main` | `32e1d6f682b05a50d58e2d4145f8497a57590cdf` |
 | 工作区 | 干净 |
 | 最近一次审计基线 | `526397a3c1b63445b33802f8f436b69ca475841a` |
-| 当前开发阶段 | Sprint 14 正式发布，Sprint 15 候选待验收 |
+| 当前开发阶段 | Sprint 15 正式发布，Sprint 16 获准启动 |
 | 最新审计报告 | [reports/latest-audit.md](reports/latest-audit.md) |
 | 最新测试报告 | [reports/latest-test.md](reports/latest-test.md) |
 | 当前任务 | [tasks/CURRENT-TASK.md](tasks/CURRENT-TASK.md) |
@@ -66,12 +66,12 @@ Sprint 12 真机验收通过，四浏览器回归通过。正式游戏与 sprint
 ## 2. 源码版本状态
 
 ```text
-branch       : sprint-15-optimization
-HEAD         : 1de74e5e232daf90574556337be20ae9480039e5
-origin/main  : 951d13b58e4800d0f9afa57bf362d2b15a186aac
+branch       : main
+HEAD         : 32e1d6f682b05a50d58e2d4145f8497a57590cdf
+origin/main  : 32e1d6f682b05a50d58e2d4145f8497a57590cdf
 file         : vector-lander/index.html
 lines        : 4261
-SHA256       : 2c27ac8d596c4710d588a26ba06047e7ee831d32b8d6b36b97c0e077c04f44f0
+SHA256       : 1d3575ed5641e8154bee5e8ad7c4cab7c687d950cee74d8f2c977d439cb3ba5a
 ```
 
 Sprint 09 的发布文件见标签 `sprint-09`。此前 Sprint 08 的 Pages 回读记录如下。

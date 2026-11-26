@@ -1,5 +1,8 @@
 # Spacer 2.0 路线图
 
+Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
+
+
 Sprint 15 独立候选待验收。 [性能与回归](reports/sprint-15/optimization.md)
 
 

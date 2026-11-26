@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
+
+
 Sprint 15 rc.2e 已提交移动端按键位置微调。 [布局与触控专项](../reports/sprint-15/rc2e-controls.md)
 
 
