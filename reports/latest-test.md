@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 15 rc.2d 移动交互与新手体验已提交。 [专项记录](../reports/sprint-15/rc2d-mobile.md)
+
+
 Sprint 15 rc.2c 已提交视觉专项。 [显示与关键回归](../reports/sprint-15/rc2c-visuals.md)
 
 
