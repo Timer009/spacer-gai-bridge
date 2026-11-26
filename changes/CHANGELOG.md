@@ -1,5 +1,8 @@
 # CHANGELOG
 
+Sprint 16 候选 v2.0.16-rc.1 在独立分支交付。 [发布回归](../reports/sprint-16/release-candidate.md)
+
+
 Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
 
 

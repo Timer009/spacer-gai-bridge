@@ -1,3 +1,3 @@
-# Sprint 15 已正式归档
+# Sprint 16 · 正式发布候选
 
-Sprint 16 已获准在独立分支开展发布回归。 [Sprint 15 用户验收与归档](../reports/sprint-15/release.md)
+候选 v2.0.16-rc.1 待用户最终验收，正式 Pages 为 v2.0.15。夸克原生横屏继续暂缓。 [发布回归](../reports/sprint-16/release-candidate.md) · [Sprint 15 归档](../reports/sprint-15/release.md)

@@ -1,5 +1,8 @@
 # Spacer 测试报告
 
+Sprint 16 候选 v2.0.16-rc.1 在独立分支交付。 [发布回归](../reports/sprint-16/release-candidate.md)
+
+
 Sprint 15 rc.2e 已提交移动端按键位置微调。 [布局与触控专项](../reports/sprint-15/rc2e-controls.md)
 
 
