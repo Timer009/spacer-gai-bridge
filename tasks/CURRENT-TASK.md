@@ -1,3 +1,3 @@
-# Sprint 15 rc.2d · 移动交互与新手体验
+# Sprint 15 rc.2e · 移动按键布局
 
-当前候选 v2.0.15-rc.2d 等待真机验收。重点复测用户复现浏览器在兼容横屏两项回收中的长按菜单、正常松手以及燃料提示。 [专项报告](../reports/sprint-15/rc2d-mobile.md) · [永久交付规范](../DELIVERY.md)
+用户反馈 rc.2d 真机阶段验收基本通过，只需微调飞行按键位置。当前候选 rc.2e 等待最终真机验收。 [专项报告](../reports/sprint-15/rc2e-controls.md) · [永久交付规范](../DELIVERY.md)

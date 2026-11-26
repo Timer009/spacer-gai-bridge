@@ -1,5 +1,8 @@
 # TASK HISTORY
 
+Sprint 15 rc.2e 已提交移动端按键位置微调。 [布局与触控专项](../reports/sprint-15/rc2e-controls.md)
+
+
 Sprint 15 rc.2d 移动交互与新手体验已提交。 [专项记录](../reports/sprint-15/rc2d-mobile.md)
 
 
