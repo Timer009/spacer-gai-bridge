@@ -1,9 +1,9 @@
 # Spacer 2.0 路线图
 
-Sprint 15 用户真机验收通过并批准归档。正式版 v2.0.15，Sprint 16 获准在独立分支开展发布回归。
+Sprint 15 已归档，海上回收热修通过用户真机验收并正式发布为 `v2.0.15-hotfix.1`。Sprint 16 候选保留在独立分支，仍待验收及批准。正式发布 Sprint 16 前须同步已发布热修并复核回收专项。夸克原生横屏继续暂缓。
 
 
-Sprint 15 独立候选待验收。 [性能与回归](reports/sprint-15/optimization.md)
+Sprint 15 历史候选测试记录。 [性能与回归](reports/sprint-15/optimization.md)
 
 
 Sprint 14 已归档为 v2.0.14，正式 Pages 已回读。专项真机指标继续待确认。

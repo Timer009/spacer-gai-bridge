@@ -1,5 +1,7 @@
 # Spacer 测试报告
 
+用户真机验收通过，发布前 Chromium 复跑回收专项通过。 [专项报告](../reports/sprint-15/recovery-deck-hotfix.md)
+
 海上回收甲板绑定发布热修专项。 [专项报告](../reports/sprint-15/recovery-deck-hotfix.md)
 
 Sprint 15 rc.2e 已提交移动端按键位置微调。 [布局与触控专项](../reports/sprint-15/rc2e-controls.md)

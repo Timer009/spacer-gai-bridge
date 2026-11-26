@@ -1,3 +1,5 @@
-# 正式版热修 · 海上回收甲板绑定
+# 海上回收热修已正式发布
 
-用户在 v2.0.15 真机验收中发现海上回收结算时火箭脱离甲板。独立分支 `hotfix-recovery-deck-binding` 交付 `v2.0.15-hotfix.1-rc.1`，等待用户真机验收。Sprint 16 候选继续保留在其独立分支。 [热修记录](../reports/sprint-15/recovery-deck-hotfix.md)
+用户真机验收通过，暂未发现异常。回收专项通过，正式版为 `v2.0.15-hotfix.1`，Spacer `eaa334864b4bf251a82549b8670cad568bd2e355`。 [验收与发布记录](../reports/sprint-15/recovery-deck-hotfix.md)
+
+等待下一阶段指令。Sprint 16 候选仍待最终验收，后续发布前须同步本热修。夸克原生横屏继续暂缓。
